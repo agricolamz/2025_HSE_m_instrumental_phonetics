@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "Instrumental Phonetics"
+  author: "G. Moroz"
+  repo-url: https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics
+  chapters:
+    - index.qmd
+    - 01-introduction-to-acoustic-phonetics.qmd
+    - 02-bioacoustics.qmd
+    - 03-vowels.qmd
+    - 04-sonorants.qmd
+    - 05-obstruents.qmd
+    - 06-prosody.qmd
+    - 07-analyzing-spectrum.qmd
+    - 08-automatic-analysis.qmd
+
+callout-appearance: simple
+callout-icon: false
+bibliography: bibliography.bib
+
+format:
+  html:
+    theme: cosmo

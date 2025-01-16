@@ -1,0 +1,44 @@
+---
+editor_options: 
+  chunk_output_type: console
+---
+
+# Word-prosodic units
+
+## Suprasegmentals
+
+We spent a lot of time talking about segmental level of a language (vowel and consonants). In this chapter we will try to grasp some suprasegmental features that superimposed on the syllable level or even word level. Here is the list of some suprasegmental units:
+
+- stress
+- tone
+- intonation
+- rhythm
+- pauses
+
+## Stress
+
+Stress refers to greater prominence associated with certain syllables in a word and can be manifested with 
+
+- increased duration
+- higher fundamental frequency
+- increased intensity
+
+Descriptive typology of stress:
+
+- predictable stress
+  - location of syllable in a word (“weight-insensitive”), see [WALS chapter 14](https://wals.info/feature/14A#2/21.6/149.1) by [@goedemans13-14]
+  - structure of syllables (“weight-sensitive”) see [WALS chapters 15](https://wals.info/feature/15A#2/21.6/149.1) and [16](https://wals.info/feature/16A#2/21.6/149.1) by [@goedemans13-15; @goedemans13-16]
+    - Hierarchy of weight for nucleus: Low V > Mid V > High V > Central V (after [@gordon07])
+    - Hierarchy of weight for rime: VVC > VV > VR > VO > V (after [@gordon07])
+- lexically/morphologically motivated
+
+Weight-sensitive systems led to the creation of Moraic Theory [@hyman85], based on [@gordon16]:
+
+![](images/08.01_moraic_theory.png)
+
+There is a list of works in [@gordon16] that provide some phonetic underpinnings of syllable weight [@broselow97; @ahn00; @gordon02; @gordon05; @gordon05chickasaw; @ryan14].
+
+## Tone
+
+Tone languages use fundamental frequency for contrasting words and its perceptual correlate is pitch. The tone languages are widespread, especially in Africa, Central America, and Southeast Asia (see the [WALS chapter](https://wals.info/feature/13A#2/19.3/152.9) by [@maddieson13]). In some languages, e.g. Thai and Mandarin, tone carries a high functional load in conveying lexical contrasts, while in others, e.g. Swedish and Koasati, tone plays a more circumscribed role. Like tone, intonation is signaled through differences in fundamental frequency. Unlike tone, however, intonation is used to communicate higher level information not lexically associated with morphemes.
+

@@ -1,0 +1,345 @@
+---
+editor_options: 
+  chunk_output_type: console
+df-print: paged
+---
+
+```{r setup08, include=FALSE}
+options(digits = 3)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, out.width="100%", fig.show='hold', fig.align='center')
+library(knitr)
+library(tidyverse)
+theme_set(theme_bw()+theme(text = element_text(size=18)))
+library(checkdown)
+```
+
+# R package for phonetics
+
+Some data to play with:
+
+- [Andi annotation textgrid](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_instrumental_phonetics/main/sounds/andi_plosives.TextGrid)
+- [Andi sound file](https://github.com/agricolamz/2024_HSE_m_instrumental_phonetics/raw/main/sounds/andi_plosives.wav)
+
+Duration analysis:
+
+```{r}
+library(tidyverse)
+andic <- read_csv("sounds/andi_plosives.csv")
+
+andic |> 
+  mutate(duration = tmax - tmin) |> 
+  filter(tier == "CD/VOT") |> 
+  separate(text, into = c("type", "sound"), sep = "_") |> 
+  ggplot(aes(type, duration))+
+  geom_point()+
+  facet_grid(~sound)
+```
+
+```{r}
+a <- read_csv("sounds/a.Table")
+
+a |> 
+  ggplot(aes(`time(s)`))+
+  geom_point(aes(y = `F1(Hz)`))+
+  geom_point(aes(y = `F2(Hz)`))
+```
+
+
+Here are the [`s1_all.TextGrid`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.TextGrid), [`s1_all.wav`](https://raw.githubusercontent.com/agricolamz/2024_HSE_m_Instrumental_phonetics/master/sounds/s1_all.wav) and the `get-formants-args.praat`:
+
+```
+###########################################################
+####### Change the path! ##################################
+outputPath$ = "/home/agricolamz/Desktop/ex/formants.csv"
+###########################################################
+
+writeInfoLine: "Extracting formants..."
+
+# Extract the names of the Praat objects
+thisSound$ = selected$("Sound")
+thisTextGrid$ = selected$("TextGrid")
+
+# Extract the number of intervals in the phoneme tier
+select TextGrid 'thisTextGrid$'
+numberOfPhonemes = Get number of intervals: 3
+appendInfoLine: "There are ", numberOfPhonemes, " intervals."
+
+# Create the Formant Object
+select Sound 'thisSound$'
+To Formant (burg)... 0 5 5000 0.025 50
+
+# Create the output file and write the first line.
+writeFileLine: "'outputPath$'", "time,phoneme,duration,F1,F2,F3"
+
+# Loop through each interval on the phoneme tier.
+for thisInterval from 1 to numberOfPhonemes
+    #appendInfoLine: thisInterval
+
+    # Get the label of the interval
+    select TextGrid 'thisTextGrid$'
+    thisPhoneme$ = Get label of interval: 3, thisInterval
+    #appendInfoLine: thisPhoneme$
+    
+    # Find the midpoint.
+    thisPhonemeStartTime = Get start point: 3, thisInterval
+    thisPhonemeEndTime   = Get end point:   3, thisInterval
+    duration = thisPhonemeEndTime - thisPhonemeStartTime
+    midpoint = thisPhonemeStartTime + duration/2
+    
+    # Extract formant measurements
+    select Formant 'thisSound$'
+    f1 = Get value at time... 1 midpoint Hertz Linear
+    f2 = Get value at time... 2 midpoint Hertz Linear
+    f3 = Get value at time... 3 midpoint Hertz Linear
+
+    # Save to a spreadsheet
+    appendFileLine: "'outputPath$'", 
+                    ...midpoint, ",",
+                    ...thisPhoneme$, ",",
+                    ...duration, ",",
+                    ...f1, ",", 
+                    ...f2, ",", 
+                    ...f3
+
+endfor
+
+appendInfoLine: newline$, newline$, "Whoo-hoo! It didn't crash!"
+```
+
+And now we can visualized the results:
+
+```{r}
+abaza_formants <- read_csv("sounds/abaza_formants.csv")
+
+abaza_formants |> 
+  filter(phoneme != "") |> 
+  ggplot(aes(F2, F1, label = phoneme))+
+  geom_label()+
+  scale_x_reverse()+
+  scale_y_reverse()
+```
+
+We can also use the size argument:
+
+```{r}
+abaza_formants |> 
+  filter(phoneme != "") |> 
+  ggplot(aes(F2, F1, label = phoneme, size = duration))+
+  geom_label()+
+  scale_x_reverse()+
+  scale_y_reverse()
+```
+
+
+## `ipa`
+
+Converts character vectors between phonetic representations. Supports IPA (International Phonetic Alphabet), X-SAMPA (Extended Speech Assessment Methods Phonetic Alphabet), and ARPABET (used by the CMU Pronouncing Dictionary).
+
+```{r}
+library(ipa)
+convert_phonetics('%hE"loU', from = "xsampa", to = "ipa")
+```
+
+If you will use the package it make sense to cite it:
+
+```{r}
+citation("ipa")
+```
+
+## `phonTools`
+
+This package contains tools for the organization, display, and analysis of the sorts of data frequently encountered in phonetics research and experimentation, including the easy creation of IPA vowel plots, and the creation and manipulation of WAVE audio files.
+
+This package is usefull, since it provides some datasets:
+
+- `pb52` --- Peterson & Barney (1952) Vowel Data (1520 rows)
+- `f73` --- Fant (1973) Swedish Vowel Data (10 rows)
+- `p73` --- Pols et al. (1973) Dutch Vowel Data (12 rows)
+- `b95` --- Bradlow (1995) Spanish Vowel Data (5 rows)
+- `h95` --- Hillenbrand et al. (1995) Vowel Data (1668 rows)
+- `a96` --- Aronson et al. (1996) Hebrew Vowel Data (10 rows)
+- `y96` --- Yang (1996) Korean Vowel Data (20 rows)
+- `f99`	--- Fourakis et al. (1999) Greek Vowel Data (5 rows)
+- `t07` --- Thomson (2007) Vowel Data (20 rows)
+
+In order to load them you need to follow these steps:
+
+```{r}
+library(phonTools)
+data(h95)
+h95
+```
+
+As you see `vowel` column is in [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA). In order to use it we need to recode it:
+
+```{r, fig.width=12}
+library(tidyverse)
+h95 |> 
+  mutate(vowel = convert_phonetics(vowel, from = "xsampa", to = "ipa")) |>
+  ggplot(aes(f2, f1, label = vowel, color = vowel))+
+  stat_ellipse()+
+  geom_text()+
+  scale_x_reverse()+
+  scale_y_reverse()+
+  coord_fixed()+
+  facet_wrap(~type)
+```
+
+It also make sense to use normalization for vowels:
+
+```{r, fig.width=12}
+h95 |> 
+  mutate(vowel = convert_phonetics(vowel, from = "xsampa", to = "ipa")) |>
+  group_by(speaker) |> 
+  mutate(f1 = scale(f1),
+         f2 = scale(f2)) |> 
+  ggplot(aes(f2, f1, label = vowel, color = vowel))+
+  stat_ellipse()+
+  geom_text()+
+  scale_x_reverse()+
+  scale_y_reverse()+
+  facet_wrap(~type)+
+  labs(title = "Normalized vowels")
+```
+
+If you will use the package it make sense to cite it:
+
+```{r}
+citation("phonTools")
+```
+
+## `vowels`
+
+Procedures for the manipulation, normalization, and plotting of phonetic and sociophonetic vowel formant data. `vowels` is the backend for the [NORM website](http://lingtools.uoregon.edu/norm/about_norm1.php).
+
+If you will use the package it make sense to cite it:
+
+```{r}
+citation("vowels")
+```
+
+## `rPraat`
+
+This is a package for reading, writing and manipulating Praat objects like TextGrid, PitchTier, Pitch, IntensityTier, Formant, Sound, and Collection files. You can find the demo for `rPraat` [here](https://fu.ff.cuni.cz/praat/rDemo.html). 
+
+If you will use the package it make sense to cite it:
+
+```{r}
+citation("rPraat")
+```
+
+## `speakr`
+
+This package allows running `Praat` scripts from R and it provides some wrappers for basic plotting. 
+
+On macOS, Linux and Windows, the path to `Praat` is set automatically to the default installation path. If you have installed Praat in a different location, or if your operating system is not supported, you can set the path to `Praat` with `options(speakr.praat.path)`.
+
+For example:
+
+```
+options(speakr.praat.path = "./custom/praat.exe")
+```
+
+If you use rstudio.cloud you need to upload the unziped file of Linux version of Praat and provide path to it within the `options()`:
+
+```
+options(speakr.praat.path = "/cloud/projects/praat")
+```
+
+You can either run this command every time you start a new R session, or you can add the command to your `.Rprofile`.
+
+If you run into the problem with permisions run the following command:
+
+```{r, eval=FALSE}
+system("chmod 700 /cloud/projects/praat")
+```
+
+As an example I will use the following data:
+
+```
+├── get-formants-args.praat
+├── s1_all.TextGrid
+└── s1_all.wav
+```
+
+Here are the [`s1_all.TextGrid`](https://raw.githubusercontent.com/agricolamz/2022_HSE_m_Instrumental_phonetics/master/sounds/s1_all.TextGrid), [`s1_all.wav`](https://raw.githubusercontent.com/agricolamz/2022_HSE_m_Instrumental_phonetics/master/sounds/s1_all.wav) and the `get-formants-args.praat`:
+
+```
+sound = Read from file: "s1_all.wav"
+formant = To Formant (burg): 0, 5, 5000, 0.05, 50
+textgrid = Read from file: "s1_all.TextGrid"
+header$ = "vowel,F1,F2,F3"
+writeInfoLine: header$
+
+form Get formants
+    choice Measure 1
+        button Hertz
+        button Bark
+    real Window_(sec) 0.03
+endform
+
+if measure == 1
+    measure$ = "Hertz"
+else
+    measure$ = "Bark"
+endif
+
+selectObject: textgrid
+intervals = Get number of intervals: 3
+
+for interval to intervals - 1
+    label$ = Get label of interval: 3, interval
+    if label$ != ""
+        start = Get start time of interval: 3, interval
+        start = start + window
+        end = Get end time of interval: 3, interval
+        end = end - window
+        vowel$ = Get label of interval: 3, interval
+
+        selectObject: formant
+        f1 = Get mean: 1, start, end, measure$
+        f2 = Get mean: 2, start, end, measure$
+        f3 = Get mean: 3, start, end, measure$
+
+        resultLine$ = "'vowel$','f1','f2','f3'"
+        appendInfoLine: resultLine$
+        selectObject: textgrid
+    endif
+endfor
+```
+
+In order to use it you need to provide path to the script:
+
+```{r}
+library(speakr)
+praat_run("sounds/speakr/get-formants-args.praat", 
+          "Hertz", 0.03, capture = TRUE)
+```
+
+As you see the result is file in a `.csv` format. We can use the following code in order to visualise it:
+
+```{r}
+library(tidyverse)
+praat_run("sounds/speakr/get-formants-args.praat", 
+          "Hertz", 0.03, capture = TRUE) |> 
+  read_csv() ->
+  abaza_formants
+
+abaza_formants |> 
+  ggplot(aes(F2, F1, label = vowel, color = vowel))+
+  geom_text()+
+  scale_x_reverse()+
+  scale_y_reverse()+
+  coord_fixed()+
+  labs(title = "Example of Abaza vowels")
+```
+
+If you will use the package it make sense to cite it:
+
+```{r}
+citation("speakr")
+```
+
+## `wrassp`
+
+The `wrassp` package is a **w**rapper for **R** around Michel Scheffers’ libassp (**A**dvanced **S**peech **S**ignal **P**rocessor). Here is the [manual](https://ips-lmu.github.io/The-EMU-SDMS-Manual/chap-wrassp.html). 

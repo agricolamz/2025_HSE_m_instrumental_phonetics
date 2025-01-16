@@ -1,0 +1,238 @@
+---
+editor_options: 
+  chunk_output_type: console
+---
+
+# Introduction to Acoustic Phonetics
+
+```{r setup01, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = "", echo = FALSE)
+options(scipen=999)
+library(tidyverse)
+theme_set(theme_bw()+theme(text = element_text(size = 16)))
+```
+
+## Before we start
+
+If you missed the class, please see [the recording](https://youtu.be/AD2KYpXlo4A) from the previous year.
+
+## Phonetics?..
+
+![](images/01.01-Phonetics-vs-Phonology.png)
+
+Phonetics is generally assumed to be a subfield that deals with articulatory, acoustic and perceptional aspects of phonological units. Phonology and phonetics together are supposed to describe organization of sounds in languages.
+
+This course is about acoustic phonetics.
+
+## Simple Harmonic Motion
+
+**Periodic Motion** is any type of motion that repeats itself after successuve equal time intervals. 
+
+**Simple Harmonic Motion** is specific type of periodic motion that arises
+from
+
+* existence of some equilibrium position for a described object;
+* linear restoring force that tending to pull the described object back
+to its equilibrium position.
+
+```{r}
+tibble(t = seq(0, 17, 0.01),
+       y = sin(t)) %>% 
+  ggplot(aes(t, y))+
+  geom_line()+
+  geom_hline(yintercept = 0, lty = 2)+
+  labs(title = "Graph of Simple Harmonic Motion")
+```
+
+There are several parameters of wave:
+
+* **Amplitude (A)** is the maximum displacement of the equilibrium position (quick note: this value is always positive).
+* **Period (T)** is the duration of time of one cycle in a repeating event. Measured in seconds.
+* **Frequency (f)** is the number of period (cycles) per second. Measured in Hz.
+
+$$
+f = \frac{1}{T} 
+$$
+$$
+T = \frac{1}{f}
+$$
+
+```{r}
+tibble(t = seq(0, 13, 0.01),
+       y = sin(t)) %>% 
+  ggplot(aes(t, y))+
+  annotate(geom = "rect", xmin = 1.57, xmax= 7.85, ymin = -1, ymax = 1, fill = "grey", alpha = 0.7)+
+  annotate(geom = "text", x= 1.57+(7.85-1.57)/2, y = 0.65, label = "T", size = 11)+
+  annotate(geom = "segment", x= 2.1, xend = 7.3, y = 0.9, yend = 0.9,
+           arrow = arrow(length = unit(0.03, "npc"), ends = "both"))+
+  annotate(geom = "text", x= 10.4, y = -0.4, label = "A", size = 11)+
+  annotate(geom = "segment", x= 11, xend = 11, y = -0.99, yend = -0.01,
+           arrow = arrow(length = unit(0.03, "npc"), ends = "both"))+
+  geom_line()+
+  geom_hline(yintercept = 0, lty = 2)+
+  labs(title = "Graph of Simple Harmonic Motion")
+```
+
+We can correlate the physical properties of sound waves with our perception:
+
+* We perceive changes in frequency as pitch;
+* We perceive changes in amplitude as loudness.
+
+One period of SHM can be devided into 360° of phase φ.
+
+```{r}
+tibble(t = seq(0, 13, 0.01),
+       y = sin(t)) %>% 
+  ggplot(aes(t, y))+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line()+
+  annotate(geom = "point", x = 0:4*2*pi/4, y = 0, size = 2)+
+  annotate(geom = "label", x = 0:4*2*pi/4, y = c(-0.1, 0.1, -0.1, 0.1,-0.1), label = paste0(0:4*90, "°"))+
+  labs(title = "Graph of Simple Harmonic Motion")
+```
+
+So for the case of two SHM they can be out of phase:
+
+```{r}
+tibble(t = seq(0, 13, 0.01),
+       y1 = sin(t),
+       y2 = sin(t+pi)) %>% 
+  pivot_longer(values_to = "y", names_to = "type", y1:y2) %>% 
+  ggplot(aes(t, y, group = type))+
+  annotate(geom = "rect", xmin = 1.57, xmax= 1.57+pi, ymin = -1, ymax = 1, fill = "grey", alpha = 0.7)+
+  annotate(geom = "text", x= 1.57+pi/2, y = 0.92, label = "180°", size = 9)+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line(aes(lty = type), show.legend = FALSE)
+```
+
+... or one way can be 90° ahead:
+
+```{r}
+tibble(t = seq(0, 13, 0.01),
+       y1 = sin(t),
+       y2 = sin(t+pi/2)) %>% 
+  pivot_longer(values_to = "y", names_to = "type", y1:y2) %>% 
+  ggplot(aes(t, y, group = type))+
+  annotate(geom = "rect", xmin = 2*pi, xmax= 2*pi+pi/2, ymin = -1, ymax = 1, fill = "grey", alpha = 0.7)+
+  annotate(geom = "text", x= 2*pi+pi/4, y = -0.3, label = "90°", size = 9)+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line(aes(lty = type), show.legend = FALSE)
+```
+
+
+So after all we have everything important for the wave definition:
+
+$$
+s(t) = A \times \cos(2\pi ft + \phi)
+$$
+
+* A — amplitude;
+* f — is the fundamental frequency;
+* φ — phase;
+* t — time.
+
+## Addition of waves
+
+If we add some waves, we will get the new wave:
+
+```{r}
+tibble(t = seq(0, 50, 0.01),
+       `wave 1` = sin(t),
+       `wave 2` = sin(t),
+       `wave 1 + wave 2` = `wave 1`+`wave 2`) %>% 
+  pivot_longer(values_to = "y", names_to = "type", `wave 1`:`wave 1 + wave 2`) %>% 
+  mutate(type = factor(type, levels = c("wave 1", "wave 2", "wave 1 + wave 2"))) %>% 
+  ggplot(aes(t, y))+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line()+
+  facet_wrap(~type, nrow = 3)
+
+tibble(t = seq(0, 50, 0.01),
+       `wave 1` = sin(t),
+       `wave 2` = sin(t+pi),
+       `wave 1 + wave 2` = `wave 1`+`wave 2`) %>% 
+  pivot_longer(values_to = "y", names_to = "type", `wave 1`:`wave 1 + wave 2`) %>% 
+  mutate(type = factor(type, levels = c("wave 1", "wave 2", "wave 1 + wave 2"))) %>% 
+  ggplot(aes(t, y))+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line()+
+  facet_wrap(~type, nrow = 3)
+
+tibble(t = seq(0, 50, 0.01),
+       `wave 1` = sin(t),
+       `wave 2` = sin(2*t),
+       `wave 1 + wave 2` = `wave 1`+`wave 2`) %>% 
+  pivot_longer(values_to = "y", names_to = "type", `wave 1`:`wave 1 + wave 2`) %>% 
+  mutate(type = factor(type, levels = c("wave 1", "wave 2", "wave 1 + wave 2"))) %>% 
+  ggplot(aes(t, y))+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line()+
+  facet_wrap(~type, nrow = 3)
+```
+
+* Beats --- beats is a phenomenon of the change in amplitude of the sum of two
+waves with slightly different frequencies. [Here](https://upload.wikimedia.org/wikipedia/commons/2/2c/Beat_-_superposition_of_104hz_and_110hz_sine_waves.ogg) is an example from Wikipedia.
+
+```{r}
+tibble(t = seq(0, 0.5, 0.0001),
+       `110 Hz` = sin(t*2*pi*110),
+       `104 Hz` = sin(t*2*pi*104),
+       `110 Hz + 104 Hz` = `110 Hz`+`104 Hz`) %>% 
+  pivot_longer(values_to = "y", names_to = "type", `110 Hz`:`110 Hz + 104 Hz`) %>% 
+  mutate(type = factor(type, levels = c("110 Hz", "104 Hz", "110 Hz + 104 Hz"))) %>% 
+  ggplot(aes(t, y))+
+  geom_hline(yintercept = 0, lty = 2)+
+  geom_line()+
+  facet_wrap(~type, nrow = 3)
+```
+
+## Harmonics
+
+## Fourier Transform
+
+Fourier Transform allows to extract components of the complex wave.
+
+|           smoothie           | complex wave |
+|:----------------------------:|:------------:|
+|               ↓             |       ↓     |
+|    1 banana, cut in chunks   |    300 Hz    |
+|         1 cup grapes         |    1000 Hz   |
+|        vanilla yogurt        |              |
+| 1/2 apple, cored and chopped |              |
+| 1.5 cup fresh spinach leaves |              |
+
+
+![](images/01.02-fourier-spectrum.png)
+
+Spectrograms are differ in window length:
+
+![](images/01.03-fourier-spectrum.png)
+
+Syllable [ka]
+
+![](images/01.04-fourier-spectrum.png)
+
+Conventional spectrogram and Zhao-Atlas-Marks distribution of the English word had, computed using a Kaiser tapering function [@fulop11: 119]:
+
+![](images/01.05-ZAM.png)
+
+Conventional and reassigned spectrograms of the English word right [@fulop11: 42]:
+
+![](images/01.06-reassigned-spectrum.png)
+
+## Source-Filter Model of Speech Production
+
+The output energy (at the mouth) for a given frequency is equal to the amplitude the source harmonic, multiplied by the magnitude of the filter function for that the frequency.
+
+![](images/01.07-source-filter.png)
+
+## Summary
+
+* sounds are waves (with amplitude, frequency and phase)
+* simple waves can be combined to the complex one
+* Fourier transform allows to extract components of the complex
+wave
+* It is not only Fourier transform that allows to extract components of
+the complex wave
+* Source-Filter Model: vocal tract is a resonator that filters some
+frequencies of the wave produced by vocal folds vibration.

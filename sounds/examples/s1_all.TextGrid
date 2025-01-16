@@ -1,0 +1,192 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = -0 
+xmax = 15.979999999999993 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "labels" 
+        xmin = -0 
+        xmax = 15.979999999999993 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = -0 
+            xmax = 8.369333333333334 
+            text = "ba" 
+        intervals [2]:
+            xmin = 8.369333333333334 
+            xmax = 15.979999999999993 
+            text = "bzə" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "trans" 
+        xmin = -0 
+        xmax = 15.979999999999993 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = -0 
+            xmax = 8.369333333333334 
+            text = "you.sg.f" 
+        intervals [2]:
+            xmin = 8.369333333333334 
+            xmax = 15.979999999999993 
+            text = "tongue" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "vowels" 
+        xmin = -0 
+        xmax = 15.979999999999993 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = -0 
+            xmax = 2.6139775258286306 
+            text = "" 
+        intervals [2]:
+            xmin = 2.6139775258286306 
+            xmax = 2.7982442756001404 
+            text = "a" 
+        intervals [3]:
+            xmin = 2.7982442756001404 
+            xmax = 3.921043004207874 
+            text = "" 
+        intervals [4]:
+            xmin = 3.921043004207874 
+            xmax = 4.161818223909314 
+            text = "a" 
+        intervals [5]:
+            xmin = 4.161818223909314 
+            xmax = 5.133356250348896 
+            text = "" 
+        intervals [6]:
+            xmin = 5.133356250348896 
+            xmax = 5.3667608000594775 
+            text = "a" 
+        intervals [7]:
+            xmin = 5.3667608000594775 
+            xmax = 6.473063745834725 
+            text = "" 
+        intervals [8]:
+            xmin = 6.473063745834725 
+            xmax = 6.699097625554444 
+            text = "a" 
+        intervals [9]:
+            xmin = 6.699097625554444 
+            xmax = 8.369333333333334 
+            text = "" 
+        intervals [10]:
+            xmin = 8.369333333333334 
+            xmax = 10.45235205594297 
+            text = "" 
+        intervals [11]:
+            xmin = 10.45235205594297 
+            xmax = 10.591526672028824 
+            text = "ə" 
+        intervals [12]:
+            xmin = 10.591526672028824 
+            xmax = 11.547790969651036 
+            text = "" 
+        intervals [13]:
+            xmin = 11.547790969651036 
+            xmax = 11.713902608205121 
+            text = "ə" 
+        intervals [14]:
+            xmin = 11.713902608205121 
+            xmax = 12.576841559687669 
+            text = "" 
+        intervals [15]:
+            xmin = 12.576841559687669 
+            xmax = 12.724995183262951 
+            text = "ə" 
+        intervals [16]:
+            xmin = 12.724995183262951 
+            xmax = 13.815944593226309 
+            text = "" 
+        intervals [17]:
+            xmin = 13.815944593226309 
+            xmax = 13.964098216801577 
+            text = "ə" 
+        intervals [18]:
+            xmin = 13.964098216801577 
+            xmax = 15.979999999999993 
+            text = "" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "uterances" 
+        xmin = -0 
+        xmax = 15.979999999999993 
+        intervals: size = 18 
+        intervals [1]:
+            xmin = -0 
+            xmax = 2.6139775258286306 
+            text = "" 
+        intervals [2]:
+            xmin = 2.6139775258286306 
+            xmax = 2.7982442756001404 
+            text = "u_1" 
+        intervals [3]:
+            xmin = 2.7982442756001404 
+            xmax = 3.921043004207874 
+            text = "" 
+        intervals [4]:
+            xmin = 3.921043004207874 
+            xmax = 4.161818223909314 
+            text = "u_2" 
+        intervals [5]:
+            xmin = 4.161818223909314 
+            xmax = 5.133356250348896 
+            text = "" 
+        intervals [6]:
+            xmin = 5.133356250348896 
+            xmax = 5.3667608000594775 
+            text = "u_3" 
+        intervals [7]:
+            xmin = 5.3667608000594775 
+            xmax = 6.473063745834725 
+            text = "" 
+        intervals [8]:
+            xmin = 6.473063745834725 
+            xmax = 6.699097625554444 
+            text = "cf" 
+        intervals [9]:
+            xmin = 6.699097625554444 
+            xmax = 8.369333333333334 
+            text = "" 
+        intervals [10]:
+            xmin = 8.369333333333334 
+            xmax = 10.45235205594297 
+            text = "" 
+        intervals [11]:
+            xmin = 10.45235205594297 
+            xmax = 10.591526672028824 
+            text = "u_1" 
+        intervals [12]:
+            xmin = 10.591526672028824 
+            xmax = 11.547790969651036 
+            text = "" 
+        intervals [13]:
+            xmin = 11.547790969651036 
+            xmax = 11.713902608205121 
+            text = "u_2" 
+        intervals [14]:
+            xmin = 11.713902608205121 
+            xmax = 12.576841559687669 
+            text = "" 
+        intervals [15]:
+            xmin = 12.576841559687669 
+            xmax = 12.724995183262951 
+            text = "u_3" 
+        intervals [16]:
+            xmin = 12.724995183262951 
+            xmax = 13.815944593226309 
+            text = "" 
+        intervals [17]:
+            xmin = 13.815944593226309 
+            xmax = 13.964098216801577 
+            text = "cf" 
+        intervals [18]:
+            xmin = 13.964098216801577 
+            xmax = 15.979999999999993 
+            text = "" 

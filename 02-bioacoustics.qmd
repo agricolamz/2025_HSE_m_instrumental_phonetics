@@ -1,0 +1,124 @@
+---
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup02, include=FALSE}
+options(digits = 3)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+theme_set(theme_bw()+theme(text = element_text(size=18)))
+library(phonfieldwork)
+```
+
+# Animal bioacoustics based on [@fletcher07]
+
+Bioacoustics --- is a subbranch of biology focused on sound production, dispersion and reception in animals (including humans).
+
+## Some facts
+
+- there is a relation between mass and frequency range: 
+
+```{r, eval = FALSE}
+options(scipen = 999)
+df <- read_csv("data/Titze I., Riede T., Mau T. 2016.csv")
+set.seed(42)
+df %>% 
+  mutate(mid = max_f0_hz - 2*(max_f0_hz-min_f0_hz)/3) %>% 
+  ggplot(aes(mass_kg, mid, label = species_en)) +
+  geom_errorbar(aes(ymin = min_f0_hz, ymax = max_f0_hz))+
+  ggrepel::geom_label_repel(show.legend = FALSE)+
+  scale_x_log10()+
+  scale_y_log10()+
+  scale_color_discrete()+
+  theme_bw()+
+  labs(color = "", x = "mass (kg), log-scale", y = "F0 frequency (Hz), log-scale",
+       subtitle = "data from Titze, Riede, Mau 2016")
+ggsave("images/02.01_mass_freq.png")
+```
+
+![](images/02.01_mass_freq.png)
+
+However some animals use tricks, e. g. koala males have an extra set of vocal cords that are 15 times wider than normal and females prefer males with the lowest voices. (see Earthsounds, e. 1, 23:00)
+
+- patterns are simpler than human
+
+```{r, cache=TRUE}
+phonfieldwork::draw_sound("sounds/Phae.long1.wav", title = "Phaethornis longirostris (Long-billed Hermit)", frequency_range = c(2,9), window_length = 20, preemphasisf = 0, from = 0.2, to = 0.7)
+```
+
+- patterns could be really fast
+
+```{r, cache=TRUE}
+phonfieldwork::draw_sound("sounds/1_ch1.wav", title = "Thyroptera tricolor (Spix's disc-winged bats)", frequency_range = c(5,40), window_length = 10, preemphasisf = 0, from = 15.0, to = 15.25)
+```
+
+- patterns could be really slow
+
+```{r, cache=TRUE}
+phonfieldwork::draw_sound("sounds/GS2-TP-NorthPacificRightWhale.mp3", title = "Eubalaena japonica (North Pacific right whale)", frequency_range = c(0,1000), window_length = 40, preemphasisf = 0, from = 21.0, to = 29, dynamic_range = 35, freq_scale = "Hz")
+```
+
+- some animals use some tricks!
+
+BBC, Earth's tropical Island -- Borneo (20:47), see [here](https://www.youtube.com/watch?v=WWohDFKmB7U)
+
+- animals adapt their frequency range to environment and to each other (environment pollution, listen to NPR Invisibilia's episode [The Last Sound](https://www.npr.org/2020/03/25/821648089/the-last-sound))
+
+## Hearing and Sound Production
+
+- Hearing is surprisingly similar (but see [this video](https://youtu.be/VElc-9Xa1f0?feature=shared) by TED-Ed)
+- Sound production of breathing animals:
+    - non-aquatic mammals
+        - exhalation through valve
+    - aquatic mammals
+        - moving are from one reservoir to another through the oscillating valve
+- Sound production of non-breathing animals:
+    - muscle-driven mechanical vibrations
+
+## Vibrational Communication
+
+- some animals communicate through vibration
+- some animals do both: [Владимир Динец (2015) Песни драконов](https://www.corpus.ru/products/vladimir-dinets-pesni-drakonov.htm)
+
+## Insects
+
+- external sensory hairs
+- ribbed file on their legs, or wings 
+- some crickets have evolved the strategy of digging a horn-shaped burrow in the earth 
+- [Tenrecs!](https://www.youtube.com/watch?v=W9kJKu4cpXM)
+
+## Land Vertebrates
+
+![](images/02.02_mamal_bird.png)
+[Why can parrots talk?](https://www.youtube.com/watch?v=1EYUhpimyxc) - Grace Smith-Vidaurre and Tim Wright
+
+
+
+### Land vertebrates
+
+- Some animals adjust their vocal system so that the frequency of the vocal valve closely matches a major resonance of the upper vocal tract, usually that of lowest frequency but not necessarily so. Some species of frogs and birds achieve this by the incorporation of an inflatable sac in the upper vocal tract. (cf. [air sacs in apes](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/air-sacs), e. g. [@hewitt02])
+- Some animals change their frequency range according to environment
+- In most mammals and other large animals the auditory canal joining the two ears in birds and reptiles has generally degenerated in mammals to the extent that each ear functions nearly independently.
+
+## Birds
+
+- Song birds have a syrinx consisting of dual inflated-membrane valves. These valves can be operated simultaneously and sometimes at different frequencies (see [overtone singing](https://www.youtube.com/watch?v=UHTF1-IhuC0)), but more usually separately, and produce a pulsating air-flow rich in harmonics.
+- Some birds have developed the ability to mimic others around them
+
+BTW: here is the database of [bird sounds](https://xeno-canto.org/)
+
+## Bats
+
+- echo-location (cf. blind or visually impaired people)
+- short calls
+- huge range 40-80 kHz
+- sound emitted through the nose rather than the mouth
+
+## Aquatic Animals
+
+- crustaceans -- like insects -- produce sound by rubbing a toothed leg-file against one of the plates covering their body
+- fish species with swim-bladder -- like other insects -- membrane over the bladder, that oscilates by muscular effort
+- different system of hearing (hair-cells, otolith)
+
+BTW: check out [a Hydrophone](https://en.wikipedia.org/wiki/Hydrophone)

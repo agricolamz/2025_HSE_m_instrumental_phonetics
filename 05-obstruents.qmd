@@ -1,0 +1,147 @@
+---
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup07, include=FALSE}
+options(digits = 3)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+theme_set(theme_bw()+theme(text = element_text(size=18)))
+```
+
+# Phonations, Obstruents
+
+This lecture [was recorded](https://youtu.be/kTwtEHax1Js).
+
+We have already discussed:
+
+- Waves, Fourier transform, Tube model
+- Vowels
+- Sonorants
+
+Today we are going to talk about
+
+- Airostream mechanisms
+- Phonations
+- Obstruents
+
+## Airstream mechanisms
+
+|           | egressive          | ingressive |
+|-----------|--------------------|------------|
+| pulmonic  | majority of sounds | [rare](http://ingressivespeech.info/)       |
+| glottalic | [ejectives](https://wals.info/feature/7A)          | [implosives](https://wals.info/feature/7A) |
+| velaric   |                    | [clicks](https://www.youtube.com/watch?v=31zzMb3U0iY)     |
+
+[Here](https://www.seeingspeech.ac.uk/ipa-charts/?chart=1) are some MRI videos.
+
+## Phonation types
+
+[**Modal voice**](https://www.youtube.com/watch?v=v9Wdf-RwLcs) --- the vocal folds are closed during half of each glottal cycle and open during the other half (approximately). Thus, the proportion of time that the glottis is open (the open quotient) during each cycle is 0.5.
+
+[**Creaky voice**](https://www.youtube.com/watch?v=BYSZS1LaABQ) --- the vocal folds are held together loosely, and air bubbles up through them. This cause longer closed phase of the glottal period and a comparably shorter open phase (and thus a smaller open quotient).
+
+[**Breathy voice**](https://www.youtube.com/watch?v=9cKnUFZjs8k) --- the vocal folds vibrate, but without much contact (for some people the vocal folds do not completely close during breathy voicing). So the glottis is open for a relatively long portion of each glottal cycle. A device called an artificial larynx is often used as a prosthesis for patients who have had their larynx removed due to disease.
+
+A device called an artificial larynx is often used as a prosthesis for
+patients who have had their larynx removed due to disease.
+
+![](images/07.01_glottis-positions.png)
+
+- **A** --- the closed vocal folds produce a glottal stop ʕ
+- **B** --- the air forced through the closed vocal folds produce creaky voice
+- **C** --- air can go through vocal folds without extra pressure, making them vibrate, this is called modal voice
+- **D** --- high rate of airflow makes vocal folds vibrate even if they are slightly pulled apart (breathy voice)
+- **E** --- pulling the vocal folds further apart doesn’t allow them vibrate, the result is a voiceless sound
+- **F** --- pull the vocal fold further apart, this is called aspiration
+
+In [@ladefoged71] it is suggested that there might be a continuum of
+phonation types from most open to most closed:
+
+voiceless > breathy > modal > creaky > glottal closure
+
+### Breathy phonation example
+
+As a consequence of noise in breathy phonation, there is much more
+aperiodic energy across the spectrum and the formant structure is less
+clear [@gordon01]:
+
+![](images/07.02_breathy.png)
+
+Spectrograms of modal and breathy voiced nasals in the Jalapa Mazatec
+words /nthǽ/ ‘seed’ and /ndǽ̰/ ‘horse’ (female speaker)
+
+### Creaky phonation example
+
+Creaky phonation is characterized with irregular glottal periods (jitter)
+but with clear formant structure. As a consequence of this irregularity, F$_0$
+is not (usually) calculated so accurately.
+
+![](images/07.03_creaky.png)
+
+## Obstruents
+
+![](images/07.04_obstruents.png)
+
+For obstruents the articulators form constrictions and occlusions within the vocal tract that generate aperiodic noise as the airflow passes through obstructions:
+
+- much more restricted airflow; 
+- acoutically, little or no of formant structure
+
+### Torbulence
+
+The main factors that determine whether airflow is turbulent:
+
+- the size of the channel and
+- the volume velocity of the airflow (volume of air going past a certain
+point per unit time).
+
+If 100 cm$^3$ per second of air flows through a channel, turbulent airflow is created if the channel area is less than 10 mm$^2$ , but not if the channel area is 20 mm$^2$ . It’s easier to get turbulent airflow from a narrow straw than a wide one.
+
+### Fricatives
+
+- sibilant are most intensive fricatives vs. non-sibilant
+- for sibilants
+   - the constriction between the alveolar ridge, or in the postalveolar
+area and the tip of the tongue, or the blade of the tongue
+   - a second constriction between the upper and lower incisors must be
+narrow so that the airstream is directed over the edges of the teeth,
+creating turbulent airflow behind the teeth
+- for non-sibilants noice is not so prominent, hardly audible
+
+![](images/07.05_tube.png)
+
+This diagram shows the results for some models of velar and palatal
+consonants compared to a single tube model of a neutral vowel. (adapted
+from [@fant60: 73])
+
+### Stops
+
+- The main articulatory posture during a stop is complete closure of the vocal tract, acoustically silence.
+- However, languages use a great variety of stops, utilizing different places of articulation, stop release sounds, and accompanying noises. Different places of articulation are destinguishable because of the coarticlulation with vowels. See the following picture from [@obleser10]:
+
+![](images/07.06_coarticulation.jpg)
+
+### Voiced Onset Time (VOT)
+
+This notion was introduced in [@lisker64], very influential work:
+
+```{r, fig.cap="picture from www.connectedpapers.com"}
+knitr::include_graphics("images/07.08_vot_papers.png")
+```
+
+VOT is the timing of glottal pulsing relative to supraglottal articulation
+
+```{r, fig.cap="A graphical representation of the VOT of voiced, tenuis, and aspirated stops, Wikipedia"}
+knitr::include_graphics("images/07.09_vot.svg")
+```
+
+[@abramson17] argue that VOT is a cross-linguistically useful (and simple) measure, even if not a universal discriminator.
+
+- aspirated voiced in Hindi: pʰ, p, b and bʰ. -- both latter sound types show negative VOT, bH showing breathy voice filling before the onset of modal voice)
+- pre-aspirated in Swedish, Icelandic, Scots Gaelic and Tarascan -- period of aspiration preceding a silent CD
+- Korean: unaspirated, slightly aspirated and strongly aspirated (degree of VOT)
+- Considering a sample of languages, [@cho99] show that VOT measurements do not directly depend on sound types and oppositions, when there are ejectives in a phonological system:
+
+![](images/07.10_cho_ladefoged.png)

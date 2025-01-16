@@ -1,0 +1,42 @@
+# About the course {.unnumbered}
+
+$$
+\text{Final Grade} = 0.6 \times \text{HW} + 0.4 \times \text{Exam}
+$$
+
+- I expect some theoretical knowledge
+    - read 2. chapter from [@gussenhoven17]
+    - see the [presentation](https://github.com/agricolamz/2021.09.13_HSE_phon_research/raw/master/2021.09.13_HSE_phon_research.pdf) on Phon research from 13.09.2021
+    - be able to use IPA symbols
+- I expect some basic R skills:
+    - import `.csv` files to R
+    - `dplyr`, `ggplot2`
+
+## Recording from 2021 in case you missed the class
+
+- [on acoustics](https://youtu.be/AD2KYpXlo4A)
+- [on Praat and Biocoustics](https://www.youtube.com/watch?v=NoZxQiu1fzs&list=PL_HB2SrKjmML6J40SgCIzPT6f0Mz9ogrW&index=2)
+- [on Vowels and duration extraction](https://www.youtube.com/watch?v=zdTIzDHnwQo&list=PL_HB2SrKjmML6J40SgCIzPT6f0Mz9ogrW&index=3)
+- [on sonorants](https://www.youtube.com/watch?v=Ff7c8SUOxws&list=PL_HB2SrKjmML6J40SgCIzPT6f0Mz9ogrW&index=4)
+
+## Homeworks
+
+
+## Useful references: 
+
+- [@ashby05]
+- [@bickford06]
+- [@boersma06]
+- [@fant70]
+- [@fuchs10]
+- [@fulop11]
+- [@gick12]
+- [@gordon01]
+- [@harrington10]
+- [[@hunt09]](https://dspace.mit.edu/bitstream/handle/1721.1/52797/547382338-MIT.pdf;sequence=2)
+- [@johnson04]
+- [@ladefoged12]
+- [@maddieson96]
+- [@rorabaugh10]
+- [@grama22]
+- [@fridland22]

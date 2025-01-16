@@ -1,0 +1,512 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Instrumental Phonetics",
+    "section": "",
+    "text": "About the course\n\\[\n\\text{Final Grade} = 0.6 \\times \\text{HW} + 0.4 \\times \\text{Exam}\n\\]",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "index.html#recording-from-2021-in-case-you-missed-the-class",
+    "href": "index.html#recording-from-2021-in-case-you-missed-the-class",
+    "title": "Instrumental Phonetics",
+    "section": "Recording from 2021 in case you missed the class",
+    "text": "Recording from 2021 in case you missed the class\n\non acoustics\non Praat and Biocoustics\non Vowels and duration extraction\non sonorants",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "index.html#homeworks",
+    "href": "index.html#homeworks",
+    "title": "Instrumental Phonetics",
+    "section": "Homeworks",
+    "text": "Homeworks",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "index.html#useful-references",
+    "href": "index.html#useful-references",
+    "title": "Instrumental Phonetics",
+    "section": "Useful references:",
+    "text": "Useful references:\n\n(Ashby and Maidment 2005)\n(Bickford and Floyd 2006)\n(Boersma and Weenink 2021)\n(Fant 1960)\n(Fuchs, Toda, and Żygis 2010)\n(Fulop 2011)\n(Gick, Wilson, and Derrick 2012)\n(Gordon and Ladefoged 2001)\n(Harrington 2010)\n(Hunt 2009)\n(Johnson 2004)\n(Ladefoged and Disner 2012)\n(Maddieson and Ladefoged 1996)\n(Rorabaugh 2010)\n(Grama 2022)\n(Fridland and Kendall 2022)\n\n\n\n\n\nAshby, M., and J. Maidment. 2005. Introducing Phonetic Science. Cambridge University Press.\n\n\nBickford, A. C., and R. Floyd. 2006. Articulatory Phonetics: Tools for Analyzing the World’s Languages. SIL International.\n\n\nBoersma, P., and D. Weenink. 2021. “Praat: Doing Phonetics by Computer.” http://www.praat.org/.\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. 2. Walter de Gruyter.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nFridland, Valerie, and Tyler Kendall. 2022. “Managing Sociophonetic Data in a Study of Regional Variation.” In The Open Handbook of Linguistic Data Management, edited by Andrea L. Berez-Kroeker, Bradley McDonnell, Eve Koller, and Lauren B. Collister, 237–47. The MIT Press. https://doi.org/10.7551/mitpress/12200.001.0001.\n\n\nFuchs, Susanne, Martine Toda, and Marzena Żygis. 2010. Turbulent Sounds: An Interdisciplinary Guide. Vol. 21. Walter de Gruyter.\n\n\nFulop, S. A. 2011. Speech Spectrum Analysis. Springer Science & Business Media.\n\n\nGick, B., I. Wilson, and D. Derrick. 2012. Articulatory Phonetics. John Wiley & Sons.\n\n\nGordon, M., and P. Ladefoged. 2001. “Phonation Types: A Cross-Linguistic Overview.” Journal of Phonetics 29 (4): 383–406.\n\n\nGrama, J. 2022. “Managing Legacy Data in a Sociophonetic Study of Vowel Variation and Change.” In The Open Handbook of Linguistic Data Management, edited by Andrea L. Berez-Kroeker, Bradley McDonnell, Eve Koller, and Lauren B. Collister, 221–36. The MIT Press. https://doi.org/10.7551/mitpress/12200.001.0001.\n\n\nGussenhoven, C., and H. Jacobs. 2017. Understanding Phonology. Routledge.\n\n\nHarrington, J. 2010. Phonetic Analysis of Speech Corpora. John Wiley & Sons.\n\n\nHunt, Elisabeth Hon. 2009. “Acoustic Characterization of the Glides/j/and/w/in American English.” PhD thesis, Massachusetts Institute of Technology.\n\n\nJohnson, K. 2004. “Acoustic and Auditory Phonetics.” Phonetica 61 (1): 56–58.\n\n\nLadefoged, P., and S. F. Disner. 2012. Vowels and Consonants. John Wiley & Sons.\n\n\nMaddieson, I., and P. Ladefoged. 1996. The Sounds of the World’s Languages. Malden, MA: Blackwell Publishing.\n\n\nRorabaugh, C. B. 2010. Notes on Digital Signal Processing: Practical Recipes for Design, Analysis and Implementation, Portable Documents. Prentice Hall.",
+    "crumbs": [
+      "About the course"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html",
+    "href": "01-introduction-to-acoustic-phonetics.html",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "",
+    "text": "1.1 Before we start\nIf you missed the class, please see the recording from the previous year.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#phonetics..",
+    "href": "01-introduction-to-acoustic-phonetics.html#phonetics..",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.2 Phonetics?..",
+    "text": "1.2 Phonetics?..\n\nPhonetics is generally assumed to be a subfield that deals with articulatory, acoustic and perceptional aspects of phonological units. Phonology and phonetics together are supposed to describe organization of sounds in languages.\nThis course is about acoustic phonetics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#simple-harmonic-motion",
+    "href": "01-introduction-to-acoustic-phonetics.html#simple-harmonic-motion",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.3 Simple Harmonic Motion",
+    "text": "1.3 Simple Harmonic Motion\nPeriodic Motion is any type of motion that repeats itself after successuve equal time intervals.\nSimple Harmonic Motion is specific type of periodic motion that arises from\n\nexistence of some equilibrium position for a described object;\nlinear restoring force that tending to pull the described object back to its equilibrium position.\n\n\n\n\n\n\n\n\n\n\nThere are several parameters of wave:\n\nAmplitude (A) is the maximum displacement of the equilibrium position (quick note: this value is always positive).\nPeriod (T) is the duration of time of one cycle in a repeating event. Measured in seconds.\nFrequency (f) is the number of period (cycles) per second. Measured in Hz.\n\n\\[\nf = \\frac{1}{T}\n\\] \\[\nT = \\frac{1}{f}\n\\]\n\n\n\n\n\n\n\n\n\nWe can correlate the physical properties of sound waves with our perception:\n\nWe perceive changes in frequency as pitch;\nWe perceive changes in amplitude as loudness.\n\nOne period of SHM can be devided into 360° of phase φ.\n\n\n\n\n\n\n\n\n\nSo for the case of two SHM they can be out of phase:\n\n\n\n\n\n\n\n\n\n… or one way can be 90° ahead:\n\n\n\n\n\n\n\n\n\nSo after all we have everything important for the wave definition:\n\\[\ns(t) = A \\times \\cos(2\\pi ft + \\phi)\n\\]\n\nA — amplitude;\nf — is the fundamental frequency;\nφ — phase;\nt — time.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#addition-of-waves",
+    "href": "01-introduction-to-acoustic-phonetics.html#addition-of-waves",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.4 Addition of waves",
+    "text": "1.4 Addition of waves\nIf we add some waves, we will get the new wave:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBeats — beats is a phenomenon of the change in amplitude of the sum of two waves with slightly different frequencies. Here is an example from Wikipedia.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#harmonics",
+    "href": "01-introduction-to-acoustic-phonetics.html#harmonics",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.5 Harmonics",
+    "text": "1.5 Harmonics",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#fourier-transform",
+    "href": "01-introduction-to-acoustic-phonetics.html#fourier-transform",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.6 Fourier Transform",
+    "text": "1.6 Fourier Transform\nFourier Transform allows to extract components of the complex wave.\n\n\n\nsmoothie\ncomplex wave\n\n\n\n\n↓\n↓\n\n\n1 banana, cut in chunks\n300 Hz\n\n\n1 cup grapes\n1000 Hz\n\n\nvanilla yogurt\n\n\n\n1/2 apple, cored and chopped\n\n\n\n1.5 cup fresh spinach leaves\n\n\n\n\n\nSpectrograms are differ in window length:\n\nSyllable [ka]\n\nConventional spectrogram and Zhao-Atlas-Marks distribution of the English word had, computed using a Kaiser tapering function (Fulop 2011: 119):\n\nConventional and reassigned spectrograms of the English word right (Fulop 2011: 42):",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#source-filter-model-of-speech-production",
+    "href": "01-introduction-to-acoustic-phonetics.html#source-filter-model-of-speech-production",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.7 Source-Filter Model of Speech Production",
+    "text": "1.7 Source-Filter Model of Speech Production\nThe output energy (at the mouth) for a given frequency is equal to the amplitude the source harmonic, multiplied by the magnitude of the filter function for that the frequency.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduction-to-acoustic-phonetics.html#summary",
+    "href": "01-introduction-to-acoustic-phonetics.html#summary",
+    "title": "1  Introduction to Acoustic Phonetics",
+    "section": "1.8 Summary",
+    "text": "1.8 Summary\n\nsounds are waves (with amplitude, frequency and phase)\nsimple waves can be combined to the complex one\nFourier transform allows to extract components of the complex wave\nIt is not only Fourier transform that allows to extract components of the complex wave\nSource-Filter Model: vocal tract is a resonator that filters some frequencies of the wave produced by vocal folds vibration.\n\n\n\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nFulop, S. A. 2011. Speech Spectrum Analysis. Springer Science & Business Media.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Acoustic Phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html",
+    "href": "02-bioacoustics.html",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "",
+    "text": "2.1 Some facts\nBioacoustics — is a subbranch of biology focused on sound production, dispersion and reception in animals (including humans).\nHowever some animals use tricks, e. g. koala males have an extra set of vocal cords that are 15 times wider than normal and females prefer males with the lowest voices. (see Earthsounds, e. 1, 23:00)\nBBC, Earth’s tropical Island – Borneo (20:47), see here",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#some-facts",
+    "href": "02-bioacoustics.html#some-facts",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "",
+    "text": "there is a relation between mass and frequency range:\n\n\n\n\npatterns are simpler than human\n\n\n\npatterns could be really fast\n\n\n\npatterns could be really slow\n\n\n\nsome animals use some tricks!\n\n\n\nanimals adapt their frequency range to environment and to each other (environment pollution, listen to NPR Invisibilia’s episode The Last Sound)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#hearing-and-sound-production",
+    "href": "02-bioacoustics.html#hearing-and-sound-production",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.2 Hearing and Sound Production",
+    "text": "2.2 Hearing and Sound Production\n\nHearing is surprisingly similar (but see this video by TED-Ed)\nSound production of breathing animals:\n\nnon-aquatic mammals\n\nexhalation through valve\n\naquatic mammals\n\nmoving are from one reservoir to another through the oscillating valve\n\n\nSound production of non-breathing animals:\n\nmuscle-driven mechanical vibrations",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#vibrational-communication",
+    "href": "02-bioacoustics.html#vibrational-communication",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.3 Vibrational Communication",
+    "text": "2.3 Vibrational Communication\n\nsome animals communicate through vibration\nsome animals do both: Владимир Динец (2015) Песни драконов",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#insects",
+    "href": "02-bioacoustics.html#insects",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.4 Insects",
+    "text": "2.4 Insects\n\nexternal sensory hairs\nribbed file on their legs, or wings\nsome crickets have evolved the strategy of digging a horn-shaped burrow in the earth\nTenrecs!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#land-vertebrates",
+    "href": "02-bioacoustics.html#land-vertebrates",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.5 Land Vertebrates",
+    "text": "2.5 Land Vertebrates\n Why can parrots talk? - Grace Smith-Vidaurre and Tim Wright\n\n2.5.1 Land vertebrates\n\nSome animals adjust their vocal system so that the frequency of the vocal valve closely matches a major resonance of the upper vocal tract, usually that of lowest frequency but not necessarily so. Some species of frogs and birds achieve this by the incorporation of an inflatable sac in the upper vocal tract. (cf. air sacs in apes, e. g. (Hewitt, MacLarnon, and Jones 2002))\nSome animals change their frequency range according to environment\nIn most mammals and other large animals the auditory canal joining the two ears in birds and reptiles has generally degenerated in mammals to the extent that each ear functions nearly independently.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#birds",
+    "href": "02-bioacoustics.html#birds",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.6 Birds",
+    "text": "2.6 Birds\n\nSong birds have a syrinx consisting of dual inflated-membrane valves. These valves can be operated simultaneously and sometimes at different frequencies (see overtone singing), but more usually separately, and produce a pulsating air-flow rich in harmonics.\nSome birds have developed the ability to mimic others around them\n\nBTW: here is the database of bird sounds",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#bats",
+    "href": "02-bioacoustics.html#bats",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.7 Bats",
+    "text": "2.7 Bats\n\necho-location (cf. blind or visually impaired people)\nshort calls\nhuge range 40-80 kHz\nsound emitted through the nose rather than the mouth",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "02-bioacoustics.html#aquatic-animals",
+    "href": "02-bioacoustics.html#aquatic-animals",
+    "title": "2  Animal bioacoustics based on (Fletcher 2007)",
+    "section": "2.8 Aquatic Animals",
+    "text": "2.8 Aquatic Animals\n\ncrustaceans – like insects – produce sound by rubbing a toothed leg-file against one of the plates covering their body\nfish species with swim-bladder – like other insects – membrane over the bladder, that oscilates by muscular effort\ndifferent system of hearing (hair-cells, otolith)\n\nBTW: check out a Hydrophone\n\n\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nHewitt, Gwen, Ann MacLarnon, and Kate E Jones. 2002. “The Functions of Laryngeal Air Sacs in Primates: A New Hypothesis.” Folia Primatologica 73 (2-3): 70–94.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Animal bioacoustics based on [@fletcher07]</span>"
+    ]
+  },
+  {
+    "objectID": "03-vowels.html",
+    "href": "03-vowels.html",
+    "title": "3  Vowels",
+    "section": "",
+    "text": "3.1 Theory",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  },
+  {
+    "objectID": "03-vowels.html#theory",
+    "href": "03-vowels.html#theory",
+    "title": "3  Vowels",
+    "section": "",
+    "text": "3.1.1 Recap\n\nSound waves can be described as\n\n\\[\ns(t) = A \\times \\cos(2\\pi ft + \\phi)\n\\]\n\nA — amplitude;\nf — is the fundamental frequency;\nφ — phase;\nt — time.\nSpeech sounds are complex waves\nFourier transform — allows to extract components of the complex wave\nLarynx produce some sound\nVocal tract filter some frequencies\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.2 How shape of the vocal tract influences on vowels? Tube model.\nHistorically, height and backness are impressionistic linguistic terms:\n\n\n\n\n\n\n\n\n\nBut we are intersted just in a cardinal points:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf we analyze acoustics we can get something like this:\n\n\n\n\n\n\n\n\n\n\n\n\n\ni\na\nu\n\n\n\n\nF1\n300\n700\n300\n\n\nF2\n2300\n1400\n800\n\n\n\nHowever, if we analyze real sounds it could be messy:\n\n\n\n\n\n\n\n\n\nTube model, after (Fant 1960): vocal tract is a tube or a set of tubes:\n\n\n\n\n\n\n\n\n\n\n\n3.1.3 Wavelength\n\n\n\n\n\n\n\n\n\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\n\nc — speed of sound;\nλ — wavelength;\nf — sound frequency;\nT — period.\n\nNeutral vocal tract in the position for the vowel ə:\n\n\n\n\n\n\n\n\n\nResonance is a phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies. The lowest natural frequency at which such a tube resonates will have a wavelength (λ) four times the length of the tube (L).\n\\[c = \\frac{\\lambda}{T} = \\lambda\\times f \\approx 33400\\text{ cm/s}\\]\nThe tube also resonates at odd multiples of that frequency.\n\\[F_1 = \\frac{c}{\\lambda} = \\frac{c}{4 \\times L} \\approx 500 \\text{ Hz}\\] \\[F_2 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{3} \\times L} = \\frac{3 \\times c}{4 L} \\approx 1500 \\text{ Hz}\\] \\[F_3 = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{5} \\times L} = \\frac{5 \\times c}{4 L} \\approx 2500 \\text{ Hz}\\] \\[F_n = \\frac{c}{\\lambda} = \\frac{c}{\\frac{4}{n} \\times L} = \\frac{n \\times c}{4 L} \\approx n \\times 500 \\text{ Hz}\\]\nSomething like this we can expect from animals:\n\n\n\n\n\n\n\n\n\n\n\n\nWhen there is a constriction, back tube and constriction form Helmholtz resonator.\n\\[f = \\frac{c}{2\\pi} \\times \\sqrt{\\frac{A}{V\\times L}}\\]\n\nA — the area of the neck;\nL — length of the tube;\nV — volume of the air in the body.\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.4 Other models\n\nPerturbation Theory [Kajiyama 1941, Mrayati et al. 1988]\nQuantal Theory (Stevens 1972)\nTheory of adaptive dispersion (Lindblom and Maddieson 1988)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  },
+  {
+    "objectID": "03-vowels.html#vowel-formants-normalization",
+    "href": "03-vowels.html#vowel-formants-normalization",
+    "title": "3  Vowels",
+    "section": "3.2 Vowel formants’ normalization",
+    "text": "3.2 Vowel formants’ normalization\nThis section is based on (Adank 2003). However, see the more detailed overview in (Flynn 2011).\nThere are three possible sources of variation in vowel formants measurements (Ladefoged and Broadbent 1957; Pols, Tromp, and Plomp 1973: 1095; Adank 2003):\n\nacoustic variation;\nspeaker variation;\n\nsociolinguistic;\nanatomical/physiological variation;\n\nand measurement error (“residual variance” in (Pols, Tromp, and Plomp 1973)).\n\nThere are a lot of researchers aimed to reduce speaker-related variation using acoustic vowel normalization (e. g. (Gerstman 1968; Lobanov 1971; Syrdal and Gopal 1986)). However there are some researches that afraid that normalization procedures can reduce interesting for the linguistics information like sociolinguistic/dialectal signal in data (Hindle 1978; Disner 1980; Thomas 2002, 174–75).\nHuman listeners deal seemingly effortlessly with all three possible sources of variation, but the dataset from (Peterson and Barney 1952) shows extrordinary variation:\n\n\n\n\n\n\n\n\n\n\n3.2.1 Acoustic vowel normalization procedures\nThere are several classes of vowel normalization procedures:\n\nformant-based procedures (Gerstman 1968; Lobanov 1971; Fant 1975; Syrdal and Gopal 1986; Miller 1989);\nwhole-spectrum procedures (Klein, Plomp, and Pols 1970; Pols, Tromp, and Plomp 1973; Bladon and Lindblom 1981; Bladon 1982; Klatt 1982);\nNeural networks (D. J. M. Weenink 1993; D. Weenink 1997).\n\nFormant-based procedures are the most compact (just 2- or 3-dimensional represetations) and comparable crosslinguisticaly.\nIn (Adank 2003) author compared 11 methods of vowel normalization:\n\n\n\n\n\n\n\n\n\nabb\nmethod\n\n\n\n\n1\nHZ\nthe baseline condition, formants in Hz\n\n\n2\nLOG\na log-transformation of the frequency scale\n\n\n3\nBARK\na bark-transformation of the frequency scale\n\n\n4\nMEL\na mel-transformation of the frequency scale\n\n\n5\nERB\nan ERB-transformation of the frequency scale\n\n\n6\nGERSTMAN\nGerstman’s (1968) range normalization\n\n\n7\nLOBANOV\nLobanov’s (1971) z-score transformation\n\n\n8\nNORDSTRÖM & LINDBLOM\nNordström & Lindblom’s (1975) vocal-tract scaling\n\n\n9\nCLIH i4\nNearey’s (1978) individual log-mean procedure\n\n\n10\nCLIH s4\nNearey’s (1978) shared log-mean procedure\n\n\n11\nSYRDAL & GOPAL\nSyrdal & Gopal’s (1986) bark-distance model\n\n\n12\nMILLER\nMiller’s (1989) formant-ratio model\n\n\n\n\n\n3.2.2 (Lobanov 1971) z-score transformation\nThe idea behind the Lobanov’s method is simple z-normalization. Imagine some random distribution:\n\n\n\n\n\n\n\n\n\nIf we apply the folowing normalization, the distribution form will be the same, however the scale will be unified with mean = 0 and standard deviation = 1:\n\\[x_{normalized} = \\frac{x-\\mu}{\\sigma}\\]\n\n\n\n\n\n\n\n\n\n\nlibrary(phonTools)\ndata(pb52)\npb52 %&gt;% \n  group_by(speaker) %&gt;% \n  mutate(vowel = ipa::convert_phonetics(vowel, from = \"xsampa\", to = \"ipa\"),\n         scaled_f1 = scale(f1),\n         scaled_f2 = scale(f2)) %&gt;%\n  ggplot(aes(scaled_f2, scaled_f1, label = vowel, color = vowel))+\n  stat_ellipse()+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()\n\n\n\n\n\n\n\n\nYou can find implementation of other methods in R package vowels.\nTry to normalize and visualize data from the dataset Hillenbrand et al. (1995), stored in h95 variable in the package phonTools.\nSometimes it make sense to get back to the formant values:\n\npb52 %&gt;% \n  mutate(overall_mean_f1 = mean(f1),\n         overall_sd_f1 = sd(f1),\n         overall_mean_f2 = mean(f2),\n         overall_sd_f2 = sd(f2)) %&gt;% \n  group_by(speaker) %&gt;% \n  mutate(vowel = ipa::convert_phonetics(vowel, from = \"xsampa\", to = \"ipa\"),\n         sclaed_f1 = scale(f1),\n         sclaed_f2 = scale(f2),\n         restored_f1 = sclaed_f1*overall_sd_f1+overall_mean_f1,\n         restored_f2 = sclaed_f2*overall_sd_f2+overall_mean_f2) %&gt;%\n  ggplot(aes(restored_f2, restored_f1, label = vowel, color = vowel))+\n  stat_ellipse()+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()\n\n\n\n\n\n\n\n\n\n\n3.2.3 vowels package\nYou can find implementation of other methods in R package vowels:\n\nlibrary(vowels)\ndata(ohiovowels)\nvowelplot(norm.lobanov(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\nvowelplot(norm.labov(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\nvowelplot(norm.nearey(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\nvowelplot(norm.wattfabricius(ohiovowels), color=\"vowels\", label=\"vowels\")\n\n\n\n\n\n\n\n\n\n\n\n\nAdank, P. M. 2003. “Vowel Normalization. A Perceptual Acoustic Study of Dutch Vowels.” PhD thesis, Ponsen & Looijen bv, Wageningen.\n\n\nBladon, RAW. 1982. “Arguments Against Formants in the Auditory Representation of Speech.” The Representation of Speech in the Peripheral Auditory System.\n\n\nBladon, RAW, and Björn Lindblom. 1981. “Modeling the Judgment of Vowel Quality Differences.” The Journal of the Acoustical Society of America 69 (5): 1414–22.\n\n\nDisner, S. F. 1980. “Evaluation of Vowel Normalization Procedures.” The Journal of the Acoustical Society of America 67 (1): 253–61.\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\n———. 1975. “Non-Uniform Vowel Normalization.” STL-QPSR 16 (2-3): 1–19.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nFlynn, N. 2011. “Comparing Vowel Formant Normalisation Procedures.” York Papers in Linguistics Series 2 (11): 1–28.\n\n\nGerstman, Louis. 1968. “Classification of Self-Normalized Vowels.” IEEE Transactions on Audio and Electroacoustics 16 (1): 78–80.\n\n\nHindle, D. 1978. “Approaches to Vowel Normalization in the Study of Natural Speech.” Linguistic Variation: Models and Methods, 161–71.\n\n\nKlatt, D. 1982. “Prediction of Perceived Phonetic Distance from Critical-Band Spectra: A First Step.” In ICASSP’82. IEEE International Conference on Acoustics, Speech, and Signal Processing, 7:1278–81. IEEE.\n\n\nKlein, W., R. Plomp, and L. C. W. Pols. 1970. “Vowel Spectra, Vowel Spaces, and Vowel Identification.” The Journal of the Acoustical Society of America 48 (4B): 999–1009.\n\n\nLadefoged, P., and D. E. Broadbent. 1957. “Information Conveyed by Vowels.” The Journal of the Acoustical Society of America 29 (1): 98–104.\n\n\nLindblom, Björn, and Ian Maddieson. 1988. “Phonetic Universals in Consonant Systems.” Language, Speech and Mind 6278.\n\n\nLobanov, B. M. 1971. “Classification of Russian Vowels Spoken by Different Speakers.” The Journal of the Acoustical Society of America 49 (2B): 606–8.\n\n\nMiller, J. D. 1989. “Auditory-Perceptual Interpretation of the Vowel.” The Journal of the Acoustical Society of America 85 (5): 2114–34.\n\n\nPeterson, G. E., and H. L. Barney. 1952. “Control Methods Used in a Study of the Vowels.” The Journal of the Acoustical Society of America 24 (2): 175–84.\n\n\nPols, L. C. W., H. R. C. Tromp, and R. Plomp. 1973. “Frequency Analysis of Dutch Vowels from 50 Male Speakers.” The Journal of the Acoustical Society of America 53 (4): 1093–1101.\n\n\nStevens, K. N. 1972. “The Quantal Nature of Speech: Evidence from Articulatory-Acoustic Data.” Human Communication: A Unified View.\n\n\nSyrdal, A. K., and H. S. Gopal. 1986. “A Perceptual Model of Vowel Recognition Based on the Auditory Representation of American English Vowels.” The Journal of the Acoustical Society of America 79 (4): 1086–1100.\n\n\nThomas, E. R. 2002. “Instrumental Phonetics.” In The Handbook of Language Variation and Change, edited by J. K. Chambers, P. Trudgill, and N. Schilling-Estes, 168–200. Oxford: Blackwell.\n\n\nWeenink, D. J. M. 1993. “Modelling Speaker Normalization by Adapting the Bias in a Neural Net.” In Proceedings Eurospeech93, 2259–62. Berlin.\n\n\nWeenink, David. 1997. “Category ART: A Variation on Adaptive Resonance Theory Neural Networks.” In Proc. Institute of Phonetic Sciences University of Amsterdam, 21:117–29. Citeseer.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vowels</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html",
+    "href": "04-sonorants.html",
+    "title": "4  Sonorants",
+    "section": "",
+    "text": "4.1 Earlier:\nMovements and positions of the articulators are shaping the resonating cavities of the vocal tract to modify the sound source for resonant/sonorant consonants as well:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#earlier",
+    "href": "04-sonorants.html#earlier",
+    "title": "4  Sonorants",
+    "section": "",
+    "text": "Source-filter model\n\n\n\nTube model\n\n\n\n\n\n\napproximants/glides/semivowels (ʋ, w, j, ɰ, ɥ, /ɹ/?),\nnasals (m, ɱ, n, ɲ, ŋ, ɴ …),\nliquids l (lateral) and various /r/ (rhotics: approximants & vibrants = trill + tap / flap).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#semivowels",
+    "href": "04-sonorants.html#semivowels",
+    "title": "4  Sonorants",
+    "section": "4.2 Semivowels",
+    "text": "4.2 Semivowels\n\nThe vocal tract is relatively open for the semivowels, as it is for vowels.\nSo, the semivowels are characterized acoustically by formants.\nBut they are consonantsǃ\n\nOccur on the periphery of syllables, and not in the centers or nuclei of syllables:\n\nRussian дай [daj] ‘give’ vs. English die [daɪ]\nEnglish yo-yo [’jəʊjəʊ] vs. Russian йо-йо [jo’ʝo]\n\nBut:\n\nRussian театр [tʲi’atr] vs [tʲi’atr̥]/[tʲi’atər] ‘theatre’\nEnglish button [’bʌtn]\nMande languages ŋ ‘I’\n\n\n4.2.1 Semivowels: ʋ, w, j, ɥ, ɰ\nSince articulation of those vowels is really similar to corresponding vowel the spectrum will be simmilar:\n\nʋ, w — u\nj — i\nɰ — ɨ\nɥ — y\n\n\n\n4.2.2 Semivowels: w, ɥ\nFrench Louis [lwi] ‘Louis’ vs. lui [lɥi] ‘him’\n\n\n\n4.2.3 Semivowels: ɹ, ɻ\nThose semivowels are produced by raising the tongue toward the alveolar ridge, the tip does not touch the alveolar ridge. The acoustic results of these tongue tip adjustments are particularly obvious in the third formant: F3 falls below the F3 frequencies typical of the neighboring vowels.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#nasal-stops",
+    "href": "04-sonorants.html#nasal-stops",
+    "title": "4  Sonorants",
+    "section": "4.3 Nasal Stops",
+    "text": "4.3 Nasal Stops\nThe greater surface area of the vocal tract means that the walls of the vocal tract absorb more energy than in non-nasal sounds, and the greater volume of air means that the inertia of air within the vocal tract absorbs more sound as well.\n\n4.3.1 Nasal Stops: uvular ɴ\n\nWhen the uvula is lowered and the dorsum of the tongue raised to produce an uvular nasal, the vocal tract can be described as a uniform tube that is closed at the glottis and open at the nostrils.If we know the length of the tube, we can calculate its resonant frequencies, because this is a quarter-wave resonator (like the vocal tract configuration for schwa).\n(Fant 1960): 12.5 cm (the distance from the uvula to the nares) + 9 cm (the distance from the uvula to the glottis) ≈ 21.5 cm\n\nF1 = c/4L = 35000/4*21.5 = 407 Hz\nF2 = 3c/4L = 1221 Hz\nF3 = 5c/4L = 2035 Hz\nF4 = 7c/4L = 2849 Hz\n\nSince there is a velocity maximum at the nostrils each of the resonant frequencies will be lower. It is hard to make quantitative predictions about the formant frequencies of ɴ (the shape of the nasal passage varies), but the formant values will be spaced more closely in the uvular nasal than they are in ǝ\n\n\n\n4.3.2 Nasal Stops: m\n\n\n\n4.3.3 Nasal Stops: anti-resonance\nThe main difference between ɴ and m is that the mouth cavity forms a side branch in the resonant tube. The mouth cavity can be modeled as a tube closed at one end (the lips) and open at the other (the uvula) , with a length of about 9 cm. We can therefore calculate the resonances of the mouth cavity as we did for ǝ, ɴ:\n\nc/4L = 35,000 / (4 × 9) = 972\n3c/4L = 2,917 Hz\n\nThe resonant frequencies of the mouth cavity in nasals are not like that we’ve seen before: the mouth cavity is a side branch of a larger resonantor: it doesn’t open directly to the atmosphere. They are “absorbed” in the side branch anti-resonance the frequency components in m that are near the resonant frequencies of the mouth cavity are canceled, and become (anti-formants) in the acoustic output. Formants show up in the spectrum as peaks of sound energy, and anti-formants show up as pronounced spectral valleys.\n\n\n4.3.4 Nasal Stops: the main properties\n\nlow F1 (sometimes called the “nasal formant”),\nclose spacing between formants,\nthe presence of anti-formants, whose frequencies are determined by the place of articulation",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#laterals",
+    "href": "04-sonorants.html#laterals",
+    "title": "4  Sonorants",
+    "section": "4.4 Laterals",
+    "text": "4.4 Laterals\n\nLaterals could be analised in the similar way: a small pocket of air on top of the tongue acts as a 4cm side branch (to the main acoustic channel which curves around one or both sides of the tongue) produce anti-formants in the spectrum (≈ 2,125).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#nasal-nasalised-and-prenasalised-vowels",
+    "href": "04-sonorants.html#nasal-nasalised-and-prenasalised-vowels",
+    "title": "4  Sonorants",
+    "section": "4.5 Nasal, nasalised, and prenasalised vowels",
+    "text": "4.5 Nasal, nasalised, and prenasalised vowels\nThe most complicated configuration of the vocal tract: 2 resonant systems at once:\n\nthe pharynx cavity + the mouth cavity — the oral tract – has resonances at about 500 Hz, 1,500 Hz, and 2,500 Hz;\nthe pharynx cavity + the nasal cavity — the nasal tract – 400, 1,200, 2,000 Hz.\n\nAll these formants are present in the spectrum of nasal vowels. Of course, the resonant frequencies of the oral tract can be modified by movements of the tongue and lips, constriction of the nose at the nares.\nFor nasalised/prenasalised vowels closed mouth produced antiformants (680 Hz, 2040 Hz).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#seminar",
+    "href": "04-sonorants.html#seminar",
+    "title": "4  Sonorants",
+    "section": "4.6 Seminar",
+    "text": "4.6 Seminar\n\n4.6.1 Glides vs. Vowels\n\nPeriodic voicing\nAmplitude lower then in vowels\nFormants\nFirst Formant target is lower than vowels’ First Formant target\nOpen quotient1 (= First Harmonic - Second Harmonic) is lower for glides\n\n\n\n4.6.2 Liquids\n\nPeriodic voicing\nAmplitude lower then in vowels\nFormants\nWide average spacing of the formants\n\n\n\n4.6.3 Nasal Stops Acoustics\n\nPeriodic voicing\nAmplitude lower then in vowels\nFormants\nFormants have broad bandwidths\nLow frequency first formant\nLess space between formants\nHigher formants have low amplitude\nAntiformants\n\n\n\n4.6.4 Spectral Slices\n\n\nPraat Objects &gt; Open Sound\nView & Edit\nFind the middle of nasals or one cycle\nSpectrum &gt; View Spectrum slice (Ctrl+L)\nSelect Spectrum Slice object in Praat Object window\nPraat Objects &gt; Draw…\n\n\nWe can use the following file with Andic nasals.\n\n\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nKania, Romain E, Stéphane Hans, Dana M Hartl, Philippe Clement, Lise Crevier-Buchman, and Daniel F Brasnu. 2004. “Variability of Electroglottographic Glottal Closed Quotients: Necessity of Standardization to Obtain Normative Values.” Archives of Otolaryngology–Head & Neck Surgery 130 (3): 349–52.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "04-sonorants.html#footnotes",
+    "href": "04-sonorants.html#footnotes",
+    "title": "4  Sonorants",
+    "section": "",
+    "text": "During phonation, the vocal folds open and close as a result of several laryngeal and extralaryngeal activities. The phases of closure and opening of the vocal folds follow one another at a rate defined by the fundamental frequency (F0). The glottal closed quotient (GCQ) is the fraction of time the glottis is considered closed and has been thought to be a good indicator of voice quality. (Kania et al. 2004: 349) This also applicable to the open quotient.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sonorants</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html",
+    "href": "05-obstruents.html",
+    "title": "5  Phonations, Obstruents",
+    "section": "",
+    "text": "5.1 Airstream mechanisms\nThis lecture was recorded.\nWe have already discussed:\nToday we are going to talk about\nHere are some MRI videos.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html#airstream-mechanisms",
+    "href": "05-obstruents.html#airstream-mechanisms",
+    "title": "5  Phonations, Obstruents",
+    "section": "",
+    "text": "egressive\ningressive\n\n\n\n\npulmonic\nmajority of sounds\nrare\n\n\nglottalic\nejectives\nimplosives\n\n\nvelaric\n\nclicks",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html#phonation-types",
+    "href": "05-obstruents.html#phonation-types",
+    "title": "5  Phonations, Obstruents",
+    "section": "5.2 Phonation types",
+    "text": "5.2 Phonation types\nModal voice — the vocal folds are closed during half of each glottal cycle and open during the other half (approximately). Thus, the proportion of time that the glottis is open (the open quotient) during each cycle is 0.5.\nCreaky voice — the vocal folds are held together loosely, and air bubbles up through them. This cause longer closed phase of the glottal period and a comparably shorter open phase (and thus a smaller open quotient).\nBreathy voice — the vocal folds vibrate, but without much contact (for some people the vocal folds do not completely close during breathy voicing). So the glottis is open for a relatively long portion of each glottal cycle. A device called an artificial larynx is often used as a prosthesis for patients who have had their larynx removed due to disease.\nA device called an artificial larynx is often used as a prosthesis for patients who have had their larynx removed due to disease.\n\n\nA — the closed vocal folds produce a glottal stop ʕ\nB — the air forced through the closed vocal folds produce creaky voice\nC — air can go through vocal folds without extra pressure, making them vibrate, this is called modal voice\nD — high rate of airflow makes vocal folds vibrate even if they are slightly pulled apart (breathy voice)\nE — pulling the vocal folds further apart doesn’t allow them vibrate, the result is a voiceless sound\nF — pull the vocal fold further apart, this is called aspiration\n\nIn (Ladefoged 1971) it is suggested that there might be a continuum of phonation types from most open to most closed:\nvoiceless &gt; breathy &gt; modal &gt; creaky &gt; glottal closure\n\n5.2.1 Breathy phonation example\nAs a consequence of noise in breathy phonation, there is much more aperiodic energy across the spectrum and the formant structure is less clear (Gordon and Ladefoged 2001):\n\nSpectrograms of modal and breathy voiced nasals in the Jalapa Mazatec words /nthǽ/ ‘seed’ and /ndǽ̰/ ‘horse’ (female speaker)\n\n\n5.2.2 Creaky phonation example\nCreaky phonation is characterized with irregular glottal periods (jitter) but with clear formant structure. As a consequence of this irregularity, F\\(_0\\) is not (usually) calculated so accurately.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "05-obstruents.html#obstruents",
+    "href": "05-obstruents.html#obstruents",
+    "title": "5  Phonations, Obstruents",
+    "section": "5.3 Obstruents",
+    "text": "5.3 Obstruents\n\nFor obstruents the articulators form constrictions and occlusions within the vocal tract that generate aperiodic noise as the airflow passes through obstructions:\n\nmuch more restricted airflow;\nacoutically, little or no of formant structure\n\n\n5.3.1 Torbulence\nThe main factors that determine whether airflow is turbulent:\n\nthe size of the channel and\nthe volume velocity of the airflow (volume of air going past a certain point per unit time).\n\nIf 100 cm\\(^3\\) per second of air flows through a channel, turbulent airflow is created if the channel area is less than 10 mm\\(^2\\) , but not if the channel area is 20 mm\\(^2\\) . It’s easier to get turbulent airflow from a narrow straw than a wide one.\n\n\n5.3.2 Fricatives\n\nsibilant are most intensive fricatives vs. non-sibilant\nfor sibilants\n\nthe constriction between the alveolar ridge, or in the postalveolar area and the tip of the tongue, or the blade of the tongue\na second constriction between the upper and lower incisors must be narrow so that the airstream is directed over the edges of the teeth, creating turbulent airflow behind the teeth\n\nfor non-sibilants noice is not so prominent, hardly audible\n\n\nThis diagram shows the results for some models of velar and palatal consonants compared to a single tube model of a neutral vowel. (adapted from (Fant 1960: 73))\n\n\n5.3.3 Stops\n\nThe main articulatory posture during a stop is complete closure of the vocal tract, acoustically silence.\nHowever, languages use a great variety of stops, utilizing different places of articulation, stop release sounds, and accompanying noises. Different places of articulation are destinguishable because of the coarticlulation with vowels. See the following picture from (Obleser et al. 2010):\n\n\n\n\n5.3.4 Voiced Onset Time (VOT)\nThis notion was introduced in (Lisker and Abramson 1964), very influential work:\n\n\n\n\n\npicture from www.connectedpapers.com\n\n\n\n\nVOT is the timing of glottal pulsing relative to supraglottal articulation\n\n\n\n\n\nA graphical representation of the VOT of voiced, tenuis, and aspirated stops, Wikipedia\n\n\n\n\n(Abramson and Whalen 2017) argue that VOT is a cross-linguistically useful (and simple) measure, even if not a universal discriminator.\n\naspirated voiced in Hindi: pʰ, p, b and bʰ. – both latter sound types show negative VOT, bH showing breathy voice filling before the onset of modal voice)\npre-aspirated in Swedish, Icelandic, Scots Gaelic and Tarascan – period of aspiration preceding a silent CD\nKorean: unaspirated, slightly aspirated and strongly aspirated (degree of VOT)\nConsidering a sample of languages, (Cho and Ladefoged 1999) show that VOT measurements do not directly depend on sound types and oppositions, when there are ejectives in a phonological system:\n\n\n\n\n\n\nAbramson, A. S., and D. H. Whalen. 2017. “Voice Onset Time (VOT) at 50: Theoretical and Practical Issues in Measuring Voicing Distinctions.” Journal of Phonetics 63: 75–86.\n\n\nCho, T., and P. Ladefoged. 1999. “Variation and Universals in VOT: Evidence from 18 Languages.” Journal of Phonetics 27 (2): 207–29.\n\n\nFant, G. 1960. Acoustic Theory of Speech Production. Paris: Mouton.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nGordon, M., and P. Ladefoged. 2001. “Phonation Types: A Cross-Linguistic Overview.” Journal of Phonetics 29 (4): 383–406.\n\n\nLadefoged, Peter. 1971. Preliminaries to Linguistic Phonetics. University of Chicago press.\n\n\nLisker, Leigh, and Arthur S Abramson. 1964. “A Cross-Language Study of Voicing in Initial Stops: Acoustical Measurements.” Word 20 (3): 384–422.\n\n\nObleser, J., A. Leaver, J. VanMeter, and J. P. Rauschecker. 2010. “Segregation of Vowels and Consonants in Human Auditory Cortex: Evidence for Distributed Hierarchical Organization.” Frontiers in Psychology 1: 232.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Phonations, Obstruents</span>"
+    ]
+  },
+  {
+    "objectID": "06-prosody.html",
+    "href": "06-prosody.html",
+    "title": "6  Word-prosodic units",
+    "section": "",
+    "text": "6.1 Suprasegmentals\nWe spent a lot of time talking about segmental level of a language (vowel and consonants). In this chapter we will try to grasp some suprasegmental features that superimposed on the syllable level or even word level. Here is the list of some suprasegmental units:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Word-prosodic units</span>"
+    ]
+  },
+  {
+    "objectID": "06-prosody.html#suprasegmentals",
+    "href": "06-prosody.html#suprasegmentals",
+    "title": "6  Word-prosodic units",
+    "section": "",
+    "text": "stress\ntone\nintonation\nrhythm\npauses",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Word-prosodic units</span>"
+    ]
+  },
+  {
+    "objectID": "06-prosody.html#stress",
+    "href": "06-prosody.html#stress",
+    "title": "6  Word-prosodic units",
+    "section": "6.2 Stress",
+    "text": "6.2 Stress\nStress refers to greater prominence associated with certain syllables in a word and can be manifested with\n\nincreased duration\nhigher fundamental frequency\nincreased intensity\n\nDescriptive typology of stress:\n\npredictable stress\n\nlocation of syllable in a word (“weight-insensitive”), see WALS chapter 14 by (Goedemans and Hulst 2013a)\nstructure of syllables (“weight-sensitive”) see WALS chapters 15 and 16 by (Goedemans and Hulst 2013c, 2013b)\n\nHierarchy of weight for nucleus: Low V &gt; Mid V &gt; High V &gt; Central V (after (M. Gordon 2007))\nHierarchy of weight for rime: VVC &gt; VV &gt; VR &gt; VO &gt; V (after (M. Gordon 2007))\n\n\nlexically/morphologically motivated\n\nWeight-sensitive systems led to the creation of Moraic Theory (Hyman 1985), based on (M. K. Gordon 2016):\n\nThere is a list of works in (M. K. Gordon 2016) that provide some phonetic underpinnings of syllable weight (Broselow, Chen, and Huffman 1997; Ahn 2000; M. Gordon 2002, 2005a, 2005b; Ryan 2014).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Word-prosodic units</span>"
+    ]
+  },
+  {
+    "objectID": "06-prosody.html#tone",
+    "href": "06-prosody.html#tone",
+    "title": "6  Word-prosodic units",
+    "section": "6.3 Tone",
+    "text": "6.3 Tone\nTone languages use fundamental frequency for contrasting words and its perceptual correlate is pitch. The tone languages are widespread, especially in Africa, Central America, and Southeast Asia (see the WALS chapter by (Maddieson 2013)). In some languages, e.g. Thai and Mandarin, tone carries a high functional load in conveying lexical contrasts, while in others, e.g. Swedish and Koasati, tone plays a more circumscribed role. Like tone, intonation is signaled through differences in fundamental frequency. Unlike tone, however, intonation is used to communicate higher level information not lexically associated with morphemes.\n\n\n\n\nAhn, M.-J. 2000. “Phonetic and Functional Bases of Syllable Weight for Stress Assignment.” University of Illinois at Urbana-Champaign.\n\n\nBroselow, E., S.-I. Chen, and M. Huffman. 1997. “Syllable Weight: Convergence of Phonology and Phonetics.” Phonology 14 (1): 47–82.\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.\n\n\nGoedemans, R., and H. van der Hulst. 2013a. “Fixed Stress Locations.” In The World Atlas of Language Structures Online, edited by Matthew S. Dryer and Martin Haspelmath. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://wals.info/chapter/14.\n\n\n———. 2013b. “Weight Factors in Weight-Sensitive Stress Systems.” In The World Atlas of Language Structures Online, edited by Matthew S. Dryer and Martin Haspelmath. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://wals.info/chapter/16.\n\n\n———. 2013c. “Weight-Sensitive Stress.” In The World Atlas of Language Structures Online, edited by Matthew S. Dryer and Martin Haspelmath. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://wals.info/chapter/15.\n\n\nGordon, M. 2002. “A Phonetically Driven Account of Syllable Weight.” Language 78: 51–80.\n\n\n———. 2005a. “A Perceptually-Driven Account of Onset-Sensitive Stress.” Natural Language & Linguistic Theory 23 (3): 595–653.\n\n\n———. 2005b. “An Autosegmental/Metrical Model of Chickasaw Intonation.” In Prosodic Typology: The Phonology of Intonation and Phrasing, 301–30. Oxford University Press.\n\n\n———. 2007. Syllable Weight: Phonetics, Phonology, Typology. Routledge.\n\n\nGordon, M. K. 2016. Phonological Typology. Oxford University Press.\n\n\nHyman, L. 1985. “A Theory of Phonological Weight.” In A Theory of Phonological Weight. Dordrecht: Foris.\n\n\nMaddieson, Ian. 2013. “Tone.” In The World Atlas of Language Structures Online, edited by Matthew S. Dryer and Martin Haspelmath. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://wals.info/chapter/13.\n\n\nRyan, K. M. 2014. “Onsets Contribute to Syllable Weight: Statistical Evidence from Stress and Meter.” Language 90: 309–41.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Word-prosodic units</span>"
+    ]
+  },
+  {
+    "objectID": "07-analyzing-spectrum.html",
+    "href": "07-analyzing-spectrum.html",
+    "title": "7  Spectrum analysis",
+    "section": "",
+    "text": "7.1 Vowels",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spectrum analysis</span>"
+    ]
+  },
+  {
+    "objectID": "07-analyzing-spectrum.html#vowels",
+    "href": "07-analyzing-spectrum.html#vowels",
+    "title": "7  Spectrum analysis",
+    "section": "",
+    "text": "7.1.1 \n\n\n\n\n\n\n\n\n\n\n\n\n\nbag, big\n\n\nbig, bag\n\n\n\n\n\n\n\n\n\n7.1.2 \n\n\n\n\n\n\n\n\n\n\n\n\n\nfriction, fraction\n\n\nfraction, friction\n\n\n\n\n\n\n\n\n\n7.1.3 \n\n\n\n\n\n\n\n\n\n\n\n\n\nmen, man\n\n\nman, men\n\n\n\n\n\n\n\n\n\n7.1.4 \n\n\n\n\n\n\n\n\n\n\n\n\n\nwrek, Rick, rook\n\n\nRick, rook, wrek\n\n\nRick, wrek, rook\n\n\nwrek, rook, Rick\n\n\nrook, Rick, wrek\n\n\nrook, wrek, Rick\n\n\n\n\n\n\n\n\n\n7.1.5 \n\n\n\n\n\n\n\n\n\n\n\n\n\nnook, neck, Nick\n\n\nneck, Nick, nook\n\n\nnook, Nick, neck\n\n\nNick, neck, nook\n\n\nneck, nook, Nick\n\n\nNick, nook, neck\n\n\n\n\n\n\n\n\n\n7.1.6 \n\n\n\n\n\n\n\n\n\n\n\n\n\nback, book, beck\n\n\nbeck, book, back\n\n\nback, beck, book\n\n\nbeck, back, book\n\n\nbook, beck, back\n\n\nbook, back, beck\n\n\n\n\n\n\n\n\n\n7.1.7 \n\n\n\n\n\n\n\n\n\n\n\n\n\nhack, hick, hook\n\n\nhack, hook, hick\n\n\nhick, hook, hack\n\n\nhook, hick, hack\n\n\nhick, hack, hook\n\n\nhook, hack, hick\n\n\n\n\n\n\n\n\n\n7.1.8 \n\n\n\n\n\n\n\n\n\n\n\n\n\nmood, mad, mid\n\n\nmad, mid, mood\n\n\nmid, mood, mad\n\n\nmood, mid, mad\n\n\nmad, mood, mid\n\n\nmid, mad, mood\n\n\n\n\n\n\n\n\n\n7.1.9 \n\n\n\n\n\n\n\n\n\n\n\n\n\ntrick, track, trek\n\n\ntrack, trick, trek\n\n\ntrek, trick, track\n\n\ntrack, trek, trick\n\n\ntrek, track, trick\n\n\ntrick, trek, track\n\n\n\n\n\n\n\n\n\n7.1.10 \n\n\n\n\n\n\n\n\n\n\n\n\n\ndoom, dim, dam, deem\n\n\ndim, doom, dam, deem\n\n\ndim, dam, doom, deem\n\n\ndeem, dam, doom, dim\n\n\ndim, dam, deem, doom\n\n\ndim, deem, dam, doom\n\n\ndam, doom, dim, deem\n\n\ndam, deem, dim, doom\n\n\ndeem, dim, doom, dam\n\n\ndim, deem, doom, dam\n\n\ndam, doom, deem, dim\n\n\ndim, doom, deem, dam\n\n\ndam, dim, doom, deem\n\n\ndeem, doom, dam, dim\n\n\ndoom, dim, deem, dam\n\n\ndoom, deem, dam, dim\n\n\ndoom, deem, dim, dam\n\n\ndoom, dam, dim, deem\n\n\ndeem, doom, dim, dam\n\n\ndoom, dam, deem, dim\n\n\ndam, deem, doom, dim\n\n\ndeem, dam, dim, doom\n\n\ndeem, dim, dam, doom\n\n\ndam, dim, deem, doom\n\n\n\n\n\n\n\n\n\n7.1.11 \n\n\n\n\n\n\n\n\n\n\n\n\n\nfeat, fat, foot, fit\n\n\nfoot, feat, fit, fat\n\n\nfeat, foot, fat, fit\n\n\nfeat, fit, fat, foot\n\n\nfeat, fit, foot, fat\n\n\nfoot, fat, feat, fit\n\n\nfoot, fit, fat, feat\n\n\nfit, foot, feat, fat\n\n\nfat, foot, fit, feat\n\n\nfit, feat, foot, fat\n\n\nfat, feat, fit, foot\n\n\nfeat, foot, fit, fat\n\n\nfat, foot, feat, fit\n\n\nfoot, feat, fat, fit\n\n\nfit, foot, fat, feat\n\n\nfit, fat, feat, foot\n\n\nfoot, fit, feat, fat\n\n\nfat, feat, foot, fit\n\n\nfat, fit, feat, foot\n\n\nfit, fat, foot, feat\n\n\nfeat, fat, fit, foot\n\n\nfoot, fat, fit, feat\n\n\nfit, feat, fat, foot\n\n\nfat, fit, foot, feat\n\n\n\n\n\n\n\n\n\n7.1.12 \n\n\n\n\n\n\n\n\n\n\n\n\n\nmass, moose, mess, miss\n\n\nmoose, mess, miss, mass\n\n\nmass, miss, moose, mess\n\n\nmoose, miss, mass, mess\n\n\nmess, mass, moose, miss\n\n\nmess, miss, moose, mass\n\n\nmass, mess, miss, moose\n\n\nmoose, mess, mass, miss\n\n\nmiss, mess, mass, moose\n\n\nmass, moose, miss, mess\n\n\nmiss, mass, moose, mess\n\n\nmass, miss, mess, moose\n\n\nmiss, moose, mess, mass\n\n\nmoose, miss, mess, mass\n\n\nmoose, mass, miss, mess\n\n\nmass, mess, moose, miss\n\n\nmoose, mass, mess, miss\n\n\nmiss, mass, mess, moose\n\n\nmiss, mess, moose, mass\n\n\nmess, moose, miss, mass\n\n\nmiss, moose, mass, mess\n\n\nmess, mass, miss, moose\n\n\nmess, moose, mass, miss\n\n\nmess, miss, mass, moose\n\n\n\n\n\n\n\n\n\n7.1.13 \n\n\n\n\n\n\n\n\n\n\n\n\n\nknot, knit, nut, net\n\n\nknot, net, nut, knit\n\n\nnut, knot, net, knit\n\n\nnet, knot, nut, knit\n\n\nnet, knot, knit, nut\n\n\nknit, net, knot, nut\n\n\nknot, nut, net, knit\n\n\nknit, net, nut, knot\n\n\nknit, knot, net, nut\n\n\nknot, net, knit, nut\n\n\nknot, nut, knit, net\n\n\nnet, knit, nut, knot\n\n\nnet, nut, knit, knot\n\n\nnut, net, knot, knit\n\n\nnut, knit, net, knot\n\n\nnet, knit, knot, nut\n\n\nknit, nut, knot, net\n\n\nnut, knot, knit, net\n\n\nnut, knit, knot, net\n\n\nnet, nut, knot, knit\n\n\nnut, net, knit, knot\n\n\nknit, nut, net, knot\n\n\nknot, knit, net, nut\n\n\nknit, knot, nut, net\n\n\n\n\n\n\n\n\n\n7.1.14 \n\n\n\n\n\n\n\n\n\n\n\n\n\nrest, roost, wrist, roast\n\n\nrest, roast, roost, wrist\n\n\nwrist, roost, rest, roast\n\n\nrest, roast, wrist, roost\n\n\nroast, wrist, roost, rest\n\n\nrest, wrist, roost, roast\n\n\nroast, roost, wrist, rest\n\n\nroast, roost, rest, wrist\n\n\nroost, wrist, rest, roast\n\n\nwrist, rest, roost, roast\n\n\nroost, roast, wrist, rest\n\n\nroost, rest, wrist, roast\n\n\nwrist, rest, roast, roost\n\n\nroost, rest, roast, wrist\n\n\nroast, rest, wrist, roost\n\n\nrest, roost, roast, wrist\n\n\nwrist, roost, roast, rest\n\n\nroost, wrist, roast, rest\n\n\nroast, rest, roost, wrist\n\n\nroast, wrist, rest, roost\n\n\nrest, wrist, roast, roost\n\n\nroost, roast, rest, wrist\n\n\nwrist, roast, rest, roost\n\n\nwrist, roast, roost, rest\n\n\n\n\n\n\n\n\n\n7.1.15 \n\n\n\n\n\n\n\n\n\n\n\n\n\nskim, scan, skin, scam\n\n\nskim, skin, scam, scan\n\n\nskim, scam, skin, scan\n\n\nscan, scam, skin, skim\n\n\nscan, scam, skim, skin\n\n\nskin, scan, skim, scam\n\n\nscan, skim, skin, scam\n\n\nscan, skin, scam, skim\n\n\nscam, skin, skim, scan\n\n\nscam, skim, skin, scan\n\n\nscam, skin, scan, skim\n\n\nscan, skim, scam, skin\n\n\nskin, skim, scam, scan\n\n\nskin, skim, scan, scam\n\n\nskim, scan, scam, skin\n\n\nskim, scam, scan, skin\n\n\nskin, scan, scam, skim\n\n\nskin, scam, skim, scan\n\n\nscam, scan, skim, skin\n\n\nscan, skin, skim, scam\n\n\nscam, skim, scan, skin\n\n\nskim, skin, scan, scam\n\n\nscam, scan, skin, skim\n\n\nskin, scam, scan, skim\n\n\n\n\n\n\n\n\n\n7.1.16 \n\n\n\n\n\n\n\n\n\n\n\n\n\nbet, bat, bit, boot, bot\n\n\nbot, bat, boot, bet, bit\n\n\nbat, bit, bot, boot, bet\n\n\nbat, bot, bit, boot, bet\n\n\nbet, boot, bat, bit, bot\n\n\nbet, bit, bat, bot, boot\n\n\nbot, bet, bat, boot, bit\n\n\nbat, boot, bet, bot, bit\n\n\nbit, bat, boot, bet, bot\n\n\nbit, bet, boot, bat, bot\n\n\nboot, bit, bat, bet, bot\n\n\nbat, bot, bet, bit, boot\n\n\nboot, bet, bot, bit, bat\n\n\nbat, bit, bet, bot, boot\n\n\nbot, bat, bet, bit, boot\n\n\nbat, bet, bit, boot, bot\n\n\nbet, bot, bit, bat, boot\n\n\nboot, bot, bat, bit, bet\n\n\nbit, bat, bet, bot, boot\n\n\nbot, bat, bit, bet, boot\n\n\nbat, bot, bit, bet, boot\n\n\nbat, bit, boot, bot, bet\n\n\nbot, boot, bet, bat, bit\n\n\nbit, bat, bot, boot, bet\n\n\nboot, bot, bit, bat, bet\n\n\nbet, bit, boot, bat, bot\n\n\nbet, bot, bat, bit, boot\n\n\nboot, bit, bat, bot, bet\n\n\nbit, bot, bat, bet, boot\n\n\nbit, bat, bet, boot, bot\n\n\nbit, boot, bot, bat, bet\n\n\nbat, bit, boot, bet, bot\n\n\nbat, bit, bot, bet, boot\n\n\nbot, bet, bit, bat, boot\n\n\nbot, bet, bit, boot, bat\n\n\nbat, bet, boot, bot, bit\n\n\nbat, bot, boot, bit, bet\n\n\nboot, bit, bet, bat, bot\n\n\nbat, boot, bit, bet, bot\n\n\nboot, bet, bit, bat, bot\n\n\nbit, boot, bot, bet, bat\n\n\nbet, boot, bot, bat, bit\n\n\nboot, bet, bot, bat, bit\n\n\nbit, bet, boot, bot, bat\n\n\nbat, bet, boot, bit, bot\n\n\nbat, bit, bet, boot, bot\n\n\nbit, boot, bat, bet, bot\n\n\nbot, bat, boot, bit, bet\n\n\nbet, bat, bot, boot, bit\n\n\nbet, bot, boot, bit, bat\n\n\nbot, bit, boot, bat, bet\n\n\nbot, boot, bet, bit, bat\n\n\nboot, bit, bot, bat, bet\n\n\nbet, bit, boot, bot, bat\n\n\nbot, bet, boot, bat, bit\n\n\nbit, bet, bot, boot, bat\n\n\nbet, bot, bit, boot, bat\n\n\nbot, bet, boot, bit, bat\n\n\nbot, boot, bit, bat, bet\n\n\nbot, boot, bat, bit, bet\n\n\nbet, bit, bat, boot, bot\n\n\nbot, bat, bet, boot, bit\n\n\nbot, bit, bet, bat, boot\n\n\nbet, bat, bit, bot, boot\n\n\nbit, bet, bot, bat, boot\n\n\nbot, bit, boot, bet, bat\n\n\nbet, bat, boot, bot, bit\n\n\nboot, bat, bot, bet, bit\n\n\nbit, bot, boot, bet, bat\n\n\nboot, bat, bit, bet, bot\n\n\nboot, bat, bet, bit, bot\n\n\nboot, bot, bit, bet, bat\n\n\nbit, boot, bat, bot, bet\n\n\nbit, bot, bet, bat, boot\n\n\nbet, bit, bot, bat, boot\n\n\nbet, boot, bat, bot, bit\n\n\nbot, bat, bit, boot, bet\n\n\nbet, boot, bot, bit, bat\n\n\nboot, bot, bet, bit, bat\n\n\nbet, bat, boot, bit, bot\n\n\nbat, bot, bet, boot, bit\n\n\nbet, bit, bot, boot, bat\n\n\nboot, bet, bit, bot, bat\n\n\nbit, bet, bat, bot, boot\n\n\nbat, boot, bot, bet, bit\n\n\nbit, boot, bet, bot, bat\n\n\nbit, bet, bat, boot, bot\n\n\nbat, boot, bet, bit, bot\n\n\nbat, bet, bit, bot, boot\n\n\nbit, bat, bot, bet, boot\n\n\nbot, boot, bat, bet, bit\n\n\nboot, bat, bot, bit, bet\n\n\nboot, bet, bat, bit, bot\n\n\nbet, boot, bit, bat, bot\n\n\nbit, bat, boot, bot, bet\n\n\nbat, bet, bot, boot, bit\n\n\nbat, bet, bot, bit, boot\n\n\nbat, bot, boot, bet, bit\n\n\nbit, bot, boot, bat, bet\n\n\nbot, boot, bit, bet, bat\n\n\nbit, bot, bat, boot, bet\n\n\nbat, boot, bit, bot, bet\n\n\nbet, bot, boot, bat, bit\n\n\nbot, bit, bet, boot, bat\n\n\nboot, bit, bet, bot, bat\n\n\nbet, boot, bit, bot, bat\n\n\nbit, bot, bet, boot, bat\n\n\nbot, bet, bat, bit, boot\n\n\nbot, bit, bat, bet, boot\n\n\nboot, bot, bet, bat, bit\n\n\nboot, bet, bat, bot, bit\n\n\nbet, bot, bat, boot, bit\n\n\nboot, bot, bat, bet, bit\n\n\nbit, boot, bet, bat, bot\n\n\nbot, bit, bat, boot, bet\n\n\nboot, bat, bit, bot, bet\n\n\nbet, bat, bot, bit, boot\n\n\nboot, bit, bot, bet, bat\n\n\nboot, bat, bet, bot, bit\n\n\nbat, boot, bot, bit, bet\n\n\n\n\n\n\n\n\n\n7.1.17 \n\n\n\n\n\n\n\n\n\n\n\n\n\npuck, pick, peck, poke, pack\n\n\npick, peck, pack, poke, puck\n\n\npick, poke, puck, pack, peck\n\n\npuck, pick, pack, peck, poke\n\n\npack, peck, poke, puck, pick\n\n\npeck, poke, pack, pick, puck\n\n\npack, peck, puck, pick, poke\n\n\npoke, puck, peck, pack, pick\n\n\npeck, pick, poke, pack, puck\n\n\npeck, puck, pick, poke, pack\n\n\npeck, pack, pick, puck, poke\n\n\npack, pick, poke, peck, puck\n\n\npeck, pack, poke, pick, puck\n\n\npick, pack, poke, peck, puck\n\n\npoke, puck, pick, peck, pack\n\n\npack, pick, poke, puck, peck\n\n\npeck, pack, puck, poke, pick\n\n\npack, poke, pick, peck, puck\n\n\npuck, peck, poke, pick, pack\n\n\npick, pack, peck, poke, puck\n\n\npuck, peck, pack, pick, poke\n\n\npick, poke, peck, pack, puck\n\n\npuck, pack, poke, peck, pick\n\n\npack, peck, pick, puck, poke\n\n\npoke, puck, peck, pick, pack\n\n\npoke, pack, pick, puck, peck\n\n\npoke, peck, puck, pick, pack\n\n\npuck, pick, peck, pack, poke\n\n\npuck, peck, pick, poke, pack\n\n\npick, poke, puck, peck, pack\n\n\npoke, puck, pick, pack, peck\n\n\npuck, peck, pick, pack, poke\n\n\npuck, poke, pick, peck, pack\n\n\npoke, pick, puck, pack, peck\n\n\npoke, peck, pack, puck, pick\n\n\npeck, pick, puck, poke, pack\n\n\npuck, poke, pack, pick, peck\n\n\npack, poke, pick, puck, peck\n\n\npack, pick, peck, poke, puck\n\n\npuck, poke, peck, pick, pack\n\n\npeck, puck, pack, poke, pick\n\n\npoke, pick, peck, puck, pack\n\n\npick, pack, peck, puck, poke\n\n\npick, puck, poke, pack, peck\n\n\npack, puck, peck, pick, poke\n\n\npick, puck, peck, pack, poke\n\n\npick, poke, peck, puck, pack\n\n\npuck, pack, peck, pick, poke\n\n\npeck, poke, pack, puck, pick\n\n\npuck, pick, poke, pack, peck\n\n\npick, puck, poke, peck, pack\n\n\npack, puck, pick, poke, peck\n\n\npuck, pack, poke, pick, peck\n\n\npack, pick, puck, poke, peck\n\n\npuck, pack, pick, poke, peck\n\n\npack, puck, peck, poke, pick\n\n\npick, peck, poke, pack, puck\n\n\npuck, pack, peck, poke, pick\n\n\npack, puck, pick, peck, poke\n\n\npoke, peck, pack, pick, puck\n\n\npack, peck, poke, pick, puck\n\n\npeck, pick, pack, poke, puck\n\n\npoke, pick, pack, puck, peck\n\n\npuck, peck, pack, poke, pick\n\n\npeck, pack, poke, puck, pick\n\n\npeck, pack, pick, poke, puck\n\n\npick, peck, puck, poke, pack\n\n\npoke, pack, puck, peck, pick\n\n\npoke, pack, pick, peck, puck\n\n\npick, peck, puck, pack, poke\n\n\npick, pack, puck, peck, poke\n\n\npick, peck, poke, puck, pack\n\n\npuck, pick, poke, peck, pack\n\n\npick, peck, pack, puck, poke\n\n\npoke, pack, peck, puck, pick\n\n\npoke, peck, pick, pack, puck\n\n\npoke, pick, puck, peck, pack\n\n\npeck, poke, pick, pack, puck\n\n\npack, peck, puck, poke, pick\n\n\npack, poke, peck, puck, pick\n\n\npeck, poke, puck, pack, pick\n\n\npeck, poke, puck, pick, pack\n\n\npoke, pick, peck, pack, puck\n\n\npoke, puck, pack, peck, pick\n\n\npeck, puck, poke, pick, pack\n\n\npick, pack, poke, puck, peck\n\n\npeck, pick, puck, pack, poke\n\n\npuck, pick, pack, poke, peck\n\n\npeck, pick, pack, puck, poke\n\n\npuck, poke, peck, pack, pick\n\n\npack, peck, pick, poke, puck\n\n\npick, puck, pack, poke, peck\n\n\npick, puck, pack, peck, poke\n\n\npoke, peck, pick, puck, pack\n\n\npuck, poke, pack, peck, pick\n\n\npoke, puck, pack, pick, peck\n\n\npack, pick, peck, puck, poke\n\n\npuck, pack, pick, peck, poke\n\n\npack, poke, puck, pick, peck\n\n\npoke, pick, pack, peck, puck\n\n\npick, pack, puck, poke, peck\n\n\npack, poke, puck, peck, pick\n\n\npuck, poke, pick, pack, peck\n\n\npeck, pick, poke, puck, pack\n\n\npack, puck, poke, pick, peck\n\n\npick, poke, pack, peck, puck\n\n\npick, puck, peck, poke, pack\n\n\npuck, peck, poke, pack, pick\n\n\npeck, pack, puck, pick, poke\n\n\npoke, peck, puck, pack, pick\n\n\npoke, pack, puck, pick, peck\n\n\npoke, pack, peck, pick, puck\n\n\npeck, puck, pack, pick, poke\n\n\npick, poke, pack, puck, peck\n\n\npeck, puck, poke, pack, pick\n\n\npeck, poke, pick, puck, pack\n\n\npack, pick, puck, peck, poke\n\n\npeck, puck, pick, pack, poke\n\n\npack, puck, poke, peck, pick\n\n\npack, poke, peck, pick, puck\n\n\n\n\n\n\n\n\n\n7.1.18 \n\n\n\n\n\n\n\n\n\n\n\n\n\npat, pet, peat, pit, put\n\n\npeat, pit, pet, put, pat\n\n\npit, pat, pet, peat, put\n\n\npeat, pet, put, pit, pat\n\n\npet, put, peat, pat, pit\n\n\nput, peat, pit, pet, pat\n\n\npet, put, pat, peat, pit\n\n\nput, peat, pet, pit, pat\n\n\npeat, pit, put, pet, pat\n\n\npet, put, pit, pat, peat\n\n\npit, put, peat, pat, pet\n\n\npet, pat, peat, put, pit\n\n\npeat, pit, pat, put, pet\n\n\npeat, pet, pit, pat, put\n\n\nput, peat, pat, pit, pet\n\n\npit, pet, peat, pat, put\n\n\npet, pat, pit, put, peat\n\n\nput, peat, pet, pat, pit\n\n\npeat, put, pit, pat, pet\n\n\npet, peat, put, pit, pat\n\n\npet, put, pat, pit, peat\n\n\nput, pit, pat, peat, pet\n\n\npit, pat, put, peat, pet\n\n\npeat, pit, pat, pet, put\n\n\npat, put, peat, pet, pit\n\n\nput, pat, peat, pit, pet\n\n\npat, peat, put, pit, pet\n\n\npat, peat, pet, pit, put\n\n\nput, peat, pat, pet, pit\n\n\npat, pet, put, peat, pit\n\n\nput, pet, pit, pat, peat\n\n\npit, pat, put, pet, peat\n\n\npat, peat, put, pet, pit\n\n\npit, pat, peat, pet, put\n\n\npeat, pat, put, pit, pet\n\n\npeat, put, pet, pit, pat\n\n\npeat, pet, pit, put, pat\n\n\nput, pat, pit, pet, peat\n\n\npeat, pet, pat, pit, put\n\n\npat, peat, pit, pet, put\n\n\nput, pet, pat, pit, peat\n\n\npat, put, pet, peat, pit\n\n\npat, put, peat, pit, pet\n\n\npit, peat, pet, pat, put\n\n\npit, peat, pat, pet, put\n\n\npeat, put, pit, pet, pat\n\n\npat, pit, pet, put, peat\n\n\npat, pit, put, peat, pet\n\n\npit, put, pet, peat, pat\n\n\npit, pet, put, pat, peat\n\n\nput, pit, peat, pat, pet\n\n\npit, put, peat, pet, pat\n\n\nput, pet, pat, peat, pit\n\n\npeat, pat, pit, put, pet\n\n\npit, peat, put, pat, pet\n\n\npeat, pet, put, pat, pit\n\n\npet, peat, put, pat, pit\n\n\npeat, put, pat, pet, pit\n\n\nput, pit, pat, pet, peat\n\n\npit, pat, pet, put, peat\n\n\npat, pit, pet, peat, put\n\n\npet, pat, pit, peat, put\n\n\npet, peat, pat, put, pit\n\n\npit, pet, peat, put, pat\n\n\nput, pat, peat, pet, pit\n\n\npit, pet, put, peat, pat\n\n\npit, pet, pat, peat, put\n\n\nput, pit, pet, peat, pat\n\n\npat, pit, peat, pet, put\n\n\nput, pat, pet, peat, pit\n\n\npit, put, pet, pat, peat\n\n\nput, pet, peat, pat, pit\n\n\npeat, pet, pat, put, pit\n\n\nput, pat, pit, peat, pet\n\n\nput, pit, peat, pet, pat\n\n\npat, put, pit, peat, pet\n\n\npeat, pat, pit, pet, put\n\n\npet, peat, pit, put, pat\n\n\npat, pet, pit, peat, put\n\n\npeat, pat, put, pet, pit\n\n\npet, put, peat, pit, pat\n\n\npeat, pat, pet, put, pit\n\n\npet, pit, peat, put, pat\n\n\nput, peat, pit, pat, pet\n\n\npeat, pit, pet, pat, put\n\n\npet, peat, pit, pat, put\n\n\npet, pat, peat, pit, put\n\n\npet, pit, peat, pat, put\n\n\npat, put, pet, pit, peat\n\n\npat, pit, put, pet, peat\n\n\npit, pet, pat, put, peat\n\n\nput, pit, pet, pat, peat\n\n\npat, pet, pit, put, peat\n\n\npat, pet, put, pit, peat\n\n\npeat, put, pet, pat, pit\n\n\npit, pat, peat, put, pet\n\n\npet, pit, pat, put, peat\n\n\nput, pat, pet, pit, peat\n\n\npat, pit, peat, put, pet\n\n\npat, peat, pet, put, pit\n\n\npet, put, pit, peat, pat\n\n\npet, pit, put, peat, pat\n\n\npet, peat, pat, pit, put\n\n\npat, peat, pit, put, pet\n\n\npeat, pit, put, pat, pet\n\n\npat, put, pit, pet, peat\n\n\npit, put, pat, pet, peat\n\n\npit, peat, pat, put, pet\n\n\npet, pit, put, pat, peat\n\n\npet, pit, pat, peat, put\n\n\npit, put, pat, peat, pet\n\n\npet, pat, put, peat, pit\n\n\npit, peat, pet, put, pat\n\n\npeat, put, pat, pit, pet\n\n\npet, pat, put, pit, peat\n\n\nput, pet, pit, peat, pat\n\n\npat, pet, peat, put, pit\n\n\npeat, pat, pet, pit, put\n\n\nput, pet, peat, pit, pat\n\n\npit, peat, put, pet, pat\n\n\n\n\n\n\n\n\n\n7.1.19 \n\n\n\n\n\n\n\n\n\n\n\n\n\nrink, rank, rang, ring, wrong\n\n\nrink, ring, rank, wrong, rang\n\n\nring, rank, rink, wrong, rang\n\n\nrank, ring, wrong, rink, rang\n\n\nrank, rang, ring, rink, wrong\n\n\nwrong, rang, rank, ring, rink\n\n\nring, rang, rank, wrong, rink\n\n\nrank, ring, rink, rang, wrong\n\n\nwrong, ring, rang, rank, rink\n\n\nrank, wrong, rang, rink, ring\n\n\nwrong, ring, rank, rink, rang\n\n\nrink, rang, ring, rank, wrong\n\n\nrank, rang, ring, wrong, rink\n\n\nrink, rang, rank, ring, wrong\n\n\nrang, rink, ring, rank, wrong\n\n\nwrong, rank, rink, ring, rang\n\n\nrang, rink, wrong, rank, ring\n\n\nrang, rank, wrong, rink, ring\n\n\nwrong, rink, rank, ring, rang\n\n\nwrong, rank, rang, rink, ring\n\n\nrink, rank, ring, wrong, rang\n\n\nrink, ring, rank, rang, wrong\n\n\nrang, ring, rank, rink, wrong\n\n\nwrong, ring, rink, rang, rank\n\n\nwrong, rink, rank, rang, ring\n\n\nrank, rang, rink, ring, wrong\n\n\nrank, rang, rink, wrong, ring\n\n\nrang, wrong, rink, ring, rank\n\n\nrink, rank, wrong, rang, ring\n\n\nwrong, rank, ring, rink, rang\n\n\nwrong, rang, rink, rank, ring\n\n\nring, wrong, rang, rank, rink\n\n\nrank, rink, wrong, rang, ring\n\n\nring, rang, rink, wrong, rank\n\n\nring, wrong, rink, rank, rang\n\n\nrank, wrong, ring, rang, rink\n\n\nrink, rang, wrong, ring, rank\n\n\nrank, rink, rang, wrong, ring\n\n\nrang, ring, rank, wrong, rink\n\n\nrink, ring, rang, wrong, rank\n\n\nrink, rang, ring, wrong, rank\n\n\nrank, rink, rang, ring, wrong\n\n\nrink, rang, rank, wrong, ring\n\n\nring, rink, rank, rang, wrong\n\n\nring, wrong, rink, rang, rank\n\n\nrang, rank, rink, wrong, ring\n\n\nrang, rank, wrong, ring, rink\n\n\nrang, rank, ring, rink, wrong\n\n\nrink, wrong, rang, ring, rank\n\n\nwrong, rink, ring, rank, rang\n\n\nring, rang, wrong, rink, rank\n\n\nrang, ring, wrong, rink, rank\n\n\nwrong, rang, rank, rink, ring\n\n\nrank, rang, wrong, rink, ring\n\n\nring, wrong, rang, rink, rank\n\n\nrink, wrong, rank, ring, rang\n\n\nrang, ring, rink, wrong, rank\n\n\nrink, rank, rang, wrong, ring\n\n\nring, rang, rank, rink, wrong\n\n\nring, rank, wrong, rang, rink\n\n\nrink, wrong, ring, rang, rank\n\n\nwrong, rink, ring, rang, rank\n\n\nring, rink, rang, rank, wrong\n\n\nrank, rink, ring, rang, wrong\n\n\nrank, ring, rink, wrong, rang\n\n\nwrong, rink, rang, rank, ring\n\n\nrank, rink, wrong, ring, rang\n\n\nwrong, rink, rang, ring, rank\n\n\nrang, rink, rank, wrong, ring\n\n\nring, wrong, rank, rink, rang\n\n\nrank, wrong, rink, rang, ring\n\n\nwrong, rank, rink, rang, ring\n\n\nrink, rang, wrong, rank, ring\n\n\nrang, rink, wrong, ring, rank\n\n\nrank, rink, ring, wrong, rang\n\n\nwrong, ring, rink, rank, rang\n\n\nring, rink, rang, wrong, rank\n\n\nrang, rank, rink, ring, wrong\n\n\nrink, wrong, ring, rank, rang\n\n\nrink, wrong, rang, rank, ring\n\n\nrang, wrong, rank, ring, rink\n\n\nwrong, ring, rang, rink, rank\n\n\nring, rank, rink, rang, wrong\n\n\nrank, wrong, rink, ring, rang\n\n\nrink, rank, ring, rang, wrong\n\n\nrang, rink, ring, wrong, rank\n\n\nring, rang, rink, rank, wrong\n\n\nrang, wrong, rank, rink, ring\n\n\nrink, ring, wrong, rang, rank\n\n\nring, rink, rank, wrong, rang\n\n\nrang, wrong, ring, rink, rank\n\n\nrang, rank, ring, wrong, rink\n\n\nrank, wrong, rang, ring, rink\n\n\nwrong, ring, rank, rang, rink\n\n\nrank, rang, wrong, ring, rink\n\n\nwrong, rang, ring, rank, rink\n\n\nring, rink, wrong, rank, rang\n\n\nwrong, rang, rink, ring, rank\n\n\nring, rank, rang, wrong, rink\n\n\nrank, ring, rang, rink, wrong\n\n\nwrong, rang, ring, rink, rank\n\n\nrink, ring, wrong, rank, rang\n\n\nring, rank, wrong, rink, rang\n\n\nrang, ring, wrong, rank, rink\n\n\nrink, rank, wrong, ring, rang\n\n\nrink, ring, rang, rank, wrong\n\n\nring, rink, wrong, rang, rank\n\n\nrink, wrong, rank, rang, ring\n\n\nrank, ring, wrong, rang, rink\n\n\nrang, wrong, ring, rank, rink\n\n\nrang, wrong, rink, rank, ring\n\n\nring, wrong, rank, rang, rink\n\n\nring, rank, rang, rink, wrong\n\n\nrang, rink, rank, ring, wrong\n\n\nrank, ring, rang, wrong, rink\n\n\nring, rang, wrong, rank, rink\n\n\nwrong, rank, ring, rang, rink\n\n\nwrong, rank, rang, ring, rink\n\n\nrang, ring, rink, rank, wrong\n\n\nrank, wrong, ring, rink, rang",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spectrum analysis</span>"
+    ]
+  },
+  {
+    "objectID": "07-analyzing-spectrum.html#consonants",
+    "href": "07-analyzing-spectrum.html#consonants",
+    "title": "7  Spectrum analysis",
+    "section": "7.2 Consonants",
+    "text": "7.2 Consonants\n\n7.2.1 \n\n\n\n\n\n\n\n\n\n\n\n\n\nax, act, ash, ass\n\n\nact, ash, ax, ass\n\n\nash, ax, ass, act\n\n\nax, ash, act, ass\n\n\nass, act, ax, ash\n\n\nact, ash, ass, ax\n\n\nass, act, ash, ax\n\n\nass, ax, ash, act\n\n\nax, ass, ash, act\n\n\nact, ax, ash, ass\n\n\nass, ash, act, ax\n\n\nash, act, ax, ass\n\n\nax, ash, ass, act\n\n\nash, ass, act, ax\n\n\nact, ass, ash, ax\n\n\nax, ass, act, ash\n\n\nash, act, ass, ax\n\n\nass, ax, act, ash\n\n\nax, act, ass, ash\n\n\nash, ax, act, ass\n\n\nash, ass, ax, act\n\n\nass, ash, ax, act\n\n\nact, ass, ax, ash\n\n\nact, ax, ass, ash\n\n\n\n\n\n\n\n\n\n7.2.2 \n\n\n\n\n\n\n\n\n\n\n\n\n\nbent, bend, bench\n\n\nbend, bench, bent\n\n\nbench, bent, bend\n\n\nbent, bench, bend\n\n\nbend, bent, bench\n\n\nbench, bend, bent\n\n\n\n\n\n\n\n\n\n7.2.3 \n\n\n\n\n\n\n\n\n\n\n\n\n\nbed, bet\n\n\nbet, bed\n\n\n\n\n\n\n\n\n\n7.2.4 \n\n\n\n\n\n\n\n\n\n\n\n\n\nsag, tag, shag\n\n\nshag, sag, tag\n\n\ntag, sag, shag\n\n\nsag, shag, tag\n\n\nshag, tag, sag\n\n\ntag, shag, sag\n\n\n\n\n\n\n\n\n\n7.2.5 \n\n\n\n\n\n\n\n\n\n\n\n\n\ntact, fax, sax, tax\n\n\nfax, sax, tact, tax\n\n\ntact, tax, sax, fax\n\n\ntax, fax, sax, tact\n\n\nfax, sax, tax, tact\n\n\ntact, fax, tax, sax\n\n\nfax, tact, tax, sax\n\n\nsax, tax, tact, fax\n\n\ntact, sax, tax, fax\n\n\nsax, fax, tact, tax\n\n\nsax, fax, tax, tact\n\n\ntact, sax, fax, tax\n\n\nfax, tax, tact, sax\n\n\ntax, tact, sax, fax\n\n\nfax, tact, sax, tax\n\n\ntax, sax, tact, fax\n\n\nfax, tax, sax, tact\n\n\nsax, tact, fax, tax\n\n\ntax, fax, tact, sax\n\n\nsax, tact, tax, fax\n\n\ntax, sax, fax, tact\n\n\ntax, tact, fax, sax\n\n\ntact, tax, fax, sax\n\n\nsax, tax, fax, tact\n\n\n\n\n\n\n\n\n\n7.2.6 \n\n\n\n\n\n\n\n\n\n\n\n\n\nshank, thank, sank, tank\n\n\nsank, shank, tank, thank\n\n\nsank, thank, tank, shank\n\n\nsank, tank, shank, thank\n\n\nshank, sank, tank, thank\n\n\nshank, sank, thank, tank\n\n\ntank, thank, shank, sank\n\n\nshank, thank, tank, sank\n\n\ntank, shank, sank, thank\n\n\nsank, tank, thank, shank\n\n\nthank, shank, sank, tank\n\n\ntank, sank, thank, shank\n\n\nsank, thank, shank, tank\n\n\nthank, shank, tank, sank\n\n\nthank, tank, sank, shank\n\n\nsank, shank, thank, tank\n\n\nthank, sank, tank, shank\n\n\nshank, tank, sank, thank\n\n\nthank, tank, shank, sank\n\n\nthank, sank, shank, tank\n\n\nshank, tank, thank, sank\n\n\ntank, thank, sank, shank\n\n\ntank, sank, shank, thank\n\n\ntank, shank, thank, sank\n\n\n\n\n\n\n\n\n\n7.2.7 \n\n\n\n\n\n\n\n\n\n\n\n\n\ndeath, debt, dead, shed\n\n\ndebt, shed, dead, death\n\n\ndeath, shed, dead, debt\n\n\nshed, death, debt, dead\n\n\ndead, death, debt, shed\n\n\nshed, dead, death, debt\n\n\ndead, shed, debt, death\n\n\ndeath, dead, debt, shed\n\n\ndebt, dead, death, shed\n\n\nshed, debt, dead, death\n\n\ndebt, death, shed, dead\n\n\ndead, debt, shed, death\n\n\ndebt, shed, death, dead\n\n\ndeath, dead, shed, debt\n\n\ndead, debt, death, shed\n\n\nshed, dead, debt, death\n\n\ndeath, shed, debt, dead\n\n\ndebt, death, dead, shed\n\n\nshed, death, dead, debt\n\n\ndead, shed, death, debt\n\n\ndeath, debt, shed, dead\n\n\ndebt, dead, shed, death\n\n\nshed, debt, death, dead\n\n\ndead, death, shed, debt\n\n\n\n\n\n\n\n\n\n7.2.8 \n\n\n\n\n\n\n\n\n\n\n\n\n\nten, den, then, send\n\n\nden, send, ten, then\n\n\nsend, ten, then, den\n\n\nthen, ten, den, send\n\n\nten, send, then, den\n\n\nden, ten, then, send\n\n\nthen, ten, send, den\n\n\nden, then, send, ten\n\n\nden, then, ten, send\n\n\nsend, den, ten, then\n\n\nthen, send, ten, den\n\n\nsend, ten, den, then\n\n\nten, den, send, then\n\n\nten, then, send, den\n\n\nden, send, then, ten\n\n\nsend, then, den, ten\n\n\nten, send, den, then\n\n\nsend, then, ten, den\n\n\nsend, den, then, ten\n\n\nten, then, den, send\n\n\nthen, den, ten, send\n\n\nden, ten, send, then\n\n\nthen, send, den, ten\n\n\nthen, den, send, ten\n\n\n\n\n\n\n\n\n\n7.2.9 \n\n\n\n\n\n\n\n\n\n\n\n\n\ntenth, cent, dent, tent\n\n\ntenth, dent, tent, cent\n\n\ncent, tenth, dent, tent\n\n\ndent, cent, tenth, tent\n\n\ncent, tent, tenth, dent\n\n\ntenth, tent, dent, cent\n\n\ntent, tenth, cent, dent\n\n\ndent, tent, cent, tenth\n\n\ndent, cent, tent, tenth\n\n\ntent, dent, tenth, cent\n\n\ntent, tenth, dent, cent\n\n\ntenth, cent, tent, dent\n\n\ntenth, tent, cent, dent\n\n\ndent, tenth, cent, tent\n\n\ntent, cent, tenth, dent\n\n\ntenth, dent, cent, tent\n\n\ncent, tenth, tent, dent\n\n\ncent, dent, tenth, tent\n\n\ntent, dent, cent, tenth\n\n\ndent, tent, tenth, cent\n\n\ndent, tenth, tent, cent\n\n\ntent, cent, dent, tenth\n\n\ncent, tent, dent, tenth\n\n\ncent, dent, tent, tenth\n\n\n\n\n\n\n\n\n\n7.2.10 \n\n\n\n\n\n\n\n\n\n\n\n\n\ntread, threat, dread, thread\n\n\ndread, threat, tread, thread\n\n\nthread, dread, threat, tread\n\n\nthreat, thread, dread, tread\n\n\nthread, tread, dread, threat\n\n\ntread, dread, thread, threat\n\n\ntread, thread, dread, threat\n\n\nthread, tread, threat, dread\n\n\nthreat, dread, tread, thread\n\n\ntread, threat, thread, dread\n\n\ndread, tread, threat, thread\n\n\nthreat, dread, thread, tread\n\n\nthread, threat, tread, dread\n\n\nthreat, tread, thread, dread\n\n\ntread, thread, threat, dread\n\n\ndread, tread, thread, threat\n\n\ndread, thread, threat, tread\n\n\ndread, threat, thread, tread\n\n\ntread, dread, threat, thread\n\n\nthreat, thread, tread, dread\n\n\nthread, threat, dread, tread\n\n\ndread, thread, tread, threat\n\n\nthreat, tread, dread, thread\n\n\nthread, dread, tread, threat\n\n\n\n\n\n\n\n\n\n7.2.11 \n\n\n\n\n\n\n\n\n\n\n\n\n\nsass, sash, hash\n\n\nhash, sass, sash\n\n\nhash, sash, sass\n\n\nsash, hash, sass\n\n\nsass, hash, sash\n\n\nsash, sass, hash\n\n\n\n\n\n\n\n\n\n7.2.12 \n\n\n\n\n\n\n\n\n\n\n\n\n\nsac, shack, hack, hag\n\n\nhag, shack, hack, sac\n\n\nsac, hag, hack, shack\n\n\nshack, sac, hack, hag\n\n\nsac, hack, hag, shack\n\n\nhag, hack, sac, shack\n\n\nhag, hack, shack, sac\n\n\nsac, hack, shack, hag\n\n\nhag, sac, hack, shack\n\n\nsac, shack, hag, hack\n\n\nhack, shack, hag, sac\n\n\nhack, hag, sac, shack\n\n\nhack, hag, shack, sac\n\n\nhag, shack, sac, hack\n\n\nhack, shack, sac, hag\n\n\nshack, hack, hag, sac\n\n\nsac, hag, shack, hack\n\n\nshack, hag, sac, hack\n\n\nshack, hag, hack, sac\n\n\nhack, sac, hag, shack\n\n\nshack, hack, sac, hag\n\n\nhag, sac, shack, hack\n\n\nhack, sac, shack, hag\n\n\nshack, sac, hag, hack\n\n\n\n\n\n\n\n\n\n7.2.13 \n\n\n\n\n\n\n\n\n\n\n\n\n\nsix, fix, sick, thick\n\n\nthick, six, fix, sick\n\n\nthick, sick, fix, six\n\n\nsix, thick, sick, fix\n\n\nsix, sick, thick, fix\n\n\nthick, fix, six, sick\n\n\nfix, sick, thick, six\n\n\nfix, six, thick, sick\n\n\nfix, thick, sick, six\n\n\nsick, six, thick, fix\n\n\nsick, thick, fix, six\n\n\nsick, fix, thick, six\n\n\nfix, thick, six, sick\n\n\nthick, fix, sick, six\n\n\nsix, sick, fix, thick\n\n\nsix, thick, fix, sick\n\n\nfix, six, sick, thick\n\n\nthick, six, sick, fix\n\n\nfix, sick, six, thick\n\n\nthick, sick, six, fix\n\n\nsick, thick, six, fix\n\n\nsix, fix, thick, sick\n\n\nsick, six, fix, thick\n\n\nsick, fix, six, thick\n\n\n\n\n\n\n\n\n\n7.2.14 \n\n\n\n\n\n\n\n\n\n\n\n\n\nfresh, threat, thread, fret\n\n\nthread, fresh, fret, threat\n\n\nthreat, fresh, fret, thread\n\n\nfret, fresh, thread, threat\n\n\nfresh, thread, threat, fret\n\n\nfresh, fret, thread, threat\n\n\nthreat, thread, fret, fresh\n\n\nthreat, fresh, thread, fret\n\n\nfret, fresh, threat, thread\n\n\nthreat, fret, thread, fresh\n\n\nthread, threat, fret, fresh\n\n\nthread, fresh, threat, fret\n\n\nfresh, threat, fret, thread\n\n\nfresh, fret, threat, thread\n\n\nfret, thread, fresh, threat\n\n\nthreat, thread, fresh, fret\n\n\nfresh, thread, fret, threat\n\n\nthread, fret, threat, fresh\n\n\nfret, threat, thread, fresh\n\n\nfret, threat, fresh, thread\n\n\nthreat, fret, fresh, thread\n\n\nfret, thread, threat, fresh\n\n\nthread, threat, fresh, fret\n\n\nthread, fret, fresh, threat\n\n\n\n\n\n\n\n\n\n7.2.15 \n\n\n\n\n\n\n\n\n\n\n\n\n\nhook, should, foot, hood\n\n\nhook, foot, should, hood\n\n\nhood, foot, hook, should\n\n\nhook, hood, should, foot\n\n\nshould, foot, hook, hood\n\n\nfoot, should, hood, hook\n\n\nhood, foot, should, hook\n\n\nfoot, hook, should, hood\n\n\nhood, should, foot, hook\n\n\nshould, hood, foot, hook\n\n\nhook, foot, hood, should\n\n\nfoot, should, hook, hood\n\n\nhood, hook, should, foot\n\n\nfoot, hood, hook, should\n\n\nfoot, hood, should, hook\n\n\nfoot, hook, hood, should\n\n\nhood, hook, foot, should\n\n\nhood, should, hook, foot\n\n\nhook, should, hood, foot\n\n\nshould, hook, hood, foot\n\n\nshould, foot, hood, hook\n\n\nshould, hood, hook, foot\n\n\nhook, hood, foot, should\n\n\nshould, hook, foot, hood\n\n\n\n\n\n\n\n\n\n7.2.16 \n\n\n\n\n\n\n\n\n\n\n\n\n\nknack, nag, wag, yak\n\n\nyak, knack, nag, wag\n\n\nknack, nag, yak, wag\n\n\nnag, wag, knack, yak\n\n\nnag, yak, wag, knack\n\n\nyak, wag, knack, nag\n\n\nknack, wag, nag, yak\n\n\nwag, knack, nag, yak\n\n\nwag, nag, yak, knack\n\n\nwag, knack, yak, nag\n\n\nnag, knack, wag, yak\n\n\nknack, yak, nag, wag\n\n\nwag, yak, nag, knack\n\n\nyak, nag, wag, knack\n\n\nnag, yak, knack, wag\n\n\nyak, wag, nag, knack\n\n\nknack, wag, yak, nag\n\n\nyak, knack, wag, nag\n\n\nyak, nag, knack, wag\n\n\nwag, yak, knack, nag\n\n\nnag, wag, yak, knack\n\n\nwag, nag, knack, yak\n\n\nknack, yak, wag, nag\n\n\nnag, knack, yak, wag\n\n\n\n\n\n\n\n\n\n7.2.17 \n\n\n\n\n\n\n\n\n\n\n\n\n\nwet, yet, let, net\n\n\nyet, net, let, wet\n\n\nyet, wet, let, net\n\n\nwet, let, yet, net\n\n\nnet, yet, wet, let\n\n\nyet, net, wet, let\n\n\nlet, wet, yet, net\n\n\nnet, yet, let, wet\n\n\nnet, wet, let, yet\n\n\nyet, wet, net, let\n\n\nnet, let, yet, wet\n\n\nlet, wet, net, yet\n\n\nyet, let, wet, net\n\n\nwet, net, yet, let\n\n\nnet, wet, yet, let\n\n\nnet, let, wet, yet\n\n\nlet, net, yet, wet\n\n\nlet, yet, wet, net\n\n\nwet, yet, net, let\n\n\nwet, let, net, yet\n\n\nlet, net, wet, yet\n\n\nwet, net, let, yet\n\n\nyet, let, net, wet\n\n\nlet, yet, net, wet\n\n\n\n\n\n\n\n\n\n7.2.18 \n\n\n\n\n\n\n\n\n\n\n\n\n\nwink, link, rink, mink\n\n\nmink, link, wink, rink\n\n\nwink, rink, mink, link\n\n\nlink, mink, rink, wink\n\n\nmink, link, rink, wink\n\n\nlink, mink, wink, rink\n\n\nwink, mink, link, rink\n\n\nlink, wink, rink, mink\n\n\nmink, wink, link, rink\n\n\nrink, link, wink, mink\n\n\nlink, wink, mink, rink\n\n\nmink, wink, rink, link\n\n\nmink, rink, link, wink\n\n\nlink, rink, wink, mink\n\n\nwink, rink, link, mink\n\n\nmink, rink, wink, link\n\n\nrink, link, mink, wink\n\n\nrink, wink, link, mink\n\n\nlink, rink, mink, wink\n\n\nwink, mink, rink, link\n\n\nwink, link, mink, rink\n\n\nrink, mink, wink, link\n\n\nrink, mink, link, wink\n\n\nrink, wink, mink, link\n\n\n\n\n\n\n\n\n\n7.2.19 \n\n\n\n\n\n\n\n\n\n\n\n\n\nscan, scare, scam, scar\n\n\nscar, scam, scan, scare\n\n\nscan, scam, scare, scar\n\n\nscare, scar, scam, scan\n\n\nscar, scan, scam, scare\n\n\nscan, scar, scare, scam\n\n\nscam, scan, scar, scare\n\n\nscar, scare, scan, scam\n\n\nscam, scar, scan, scare\n\n\nscare, scan, scam, scar\n\n\nscar, scare, scam, scan\n\n\nscam, scare, scan, scar\n\n\nscare, scam, scan, scar\n\n\nscare, scam, scar, scan\n\n\nscam, scar, scare, scan\n\n\nscare, scar, scan, scam\n\n\nscam, scan, scare, scar\n\n\nscan, scar, scam, scare\n\n\nscar, scan, scare, scam\n\n\nscam, scare, scar, scan\n\n\nscar, scam, scare, scan\n\n\nscan, scare, scar, scam\n\n\nscan, scam, scar, scare\n\n\nscare, scan, scar, scam\n\n\n\n\n\n\n\n\n\n7.2.20 \n\n\n\n\n\n\n\n\n\n\n\n\n\nhay, hem, hell, hen\n\n\nhem, hen, hell, hay\n\n\nhay, hen, hell, hem\n\n\nhen, hem, hell, hay\n\n\nhen, hay, hell, hem\n\n\nhell, hem, hen, hay\n\n\nhen, hell, hem, hay\n\n\nhell, hay, hem, hen\n\n\nhell, hay, hen, hem\n\n\nhen, hell, hay, hem\n\n\nhell, hen, hem, hay\n\n\nhem, hay, hell, hen\n\n\nhen, hay, hem, hell\n\n\nhay, hen, hem, hell\n\n\nhay, hem, hen, hell\n\n\nhell, hen, hay, hem\n\n\nhem, hell, hen, hay\n\n\nhay, hell, hem, hen\n\n\nhen, hem, hay, hell\n\n\nhay, hell, hen, hem\n\n\nhem, hay, hen, hell\n\n\nhell, hem, hay, hen\n\n\nhem, hell, hay, hen\n\n\nhem, hen, hay, hell",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spectrum analysis</span>"
+    ]
+  },
+  {
+    "objectID": "07-analyzing-spectrum.html#stress",
+    "href": "07-analyzing-spectrum.html#stress",
+    "title": "7  Spectrum analysis",
+    "section": "7.3 Stress",
+    "text": "7.3 Stress\n\n7.3.1 \n\n\n\n\n\n\n\n\n\n\n\n\n\nabsEnt, Absent\n\n\nAbsent, absEnt\n\n\n\n\n\n\n\n\n\n7.3.2 \n\n\n\n\n\n\n\n\n\n\n\n\n\nAccent, accEnt\n\n\naccEnt, Accent\n\n\n\n\n\n\n\n\n\n7.3.3 \n\n\n\n\n\n\n\n\n\n\n\n\n\naddrEss, Address\n\n\nAddress, addrEss\n\n\n\n\n\n\n\n\n\n7.3.4 \n\n\n\n\n\n\n\n\n\n\n\n\n\ncOnsole, consOle\n\n\nconsOle, cOnsole\n\n\n\n\n\n\n\n\n\n7.3.5 \n\n\n\n\n\n\n\n\n\n\n\n\n\ncOntent, contEnt\n\n\ncontEnt, cOntent\n\n\n\n\n\n\n\n\n\n7.3.6 \n\n\n\n\n\n\n\n\n\n\n\n\n\nextrAct, Extract\n\n\nExtract, extrAct\n\n\n\n\n\n\n\n\n\n7.3.7 \n\n\n\n\n\n\n\n\n\n\n\n\n\nimpOrt, Import\n\n\nImport, impOrt\n\n\n\n\n\n\n\n\n\n7.3.8 \n\n\n\n\n\n\n\n\n\n\n\n\n\nperfEct, pErfect\n\n\npErfect, perfEct\n\n\n\n\n\n\n\n\n\n7.3.9 \n\n\n\n\n\n\n\n\n\n\n\n\n\npresEnt, prEsent\n\n\nprEsent, presEnt\n\n\n\n\n\n\n\n\n\n7.3.10 \n\n\n\n\n\n\n\n\n\n\n\n\n\nrEsearch, resEArch\n\n\nresEArch, rEsearch",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spectrum analysis</span>"
+    ]
+  },
+  {
+    "objectID": "07-analyzing-spectrum.html#guess-an-animal",
+    "href": "07-analyzing-spectrum.html#guess-an-animal",
+    "title": "7  Spectrum analysis",
+    "section": "7.4 Guess an animal",
+    "text": "7.4 Guess an animal\n\n7.4.1 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.2 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.3 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.4 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.5 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.6 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.7 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.8 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.9 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.10 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.11 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.12 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.13 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.14 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.15 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.16 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.17 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.18 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.19 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.20 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.21 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.22 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.23 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.4.24 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spectrum analysis</span>"
+    ]
+  },
+  {
+    "objectID": "08-automatic-analysis.html",
+    "href": "08-automatic-analysis.html",
+    "title": "8  R package for phonetics",
+    "section": "",
+    "text": "8.1 ipa\nSome data to play with:\nDuration analysis:\nHere are the s1_all.TextGrid, s1_all.wav and the get-formants-args.praat:\nAnd now we can visualized the results:\nWe can also use the size argument:\nConverts character vectors between phonetic representations. Supports IPA (International Phonetic Alphabet), X-SAMPA (Extended Speech Assessment Methods Phonetic Alphabet), and ARPABET (used by the CMU Pronouncing Dictionary).\nlibrary(ipa)\nconvert_phonetics('%hE\"loU', from = \"xsampa\", to = \"ipa\")\n\n[1] \"ˌhɛˈloʊ\"\nIf you will use the package it make sense to cite it:\ncitation(\"ipa\")\n\nTo cite ipa in publications use:\n\n  Alexander Rossell Hayes (2020). ipa: convert between phonetic\n  alphabets. R package version 0.1.0.\n  https://github.com/rossellhayes/ipa\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {ipa: convert between phonetic alphabets},\n    author = {Rossell Hayes and {Alexander}},\n    year = {2020},\n    note = {R package version 0.1.0},\n    url = {https://github.com/rossellhayes/ipa},\n  }",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>R package for phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "08-automatic-analysis.html#phontools",
+    "href": "08-automatic-analysis.html#phontools",
+    "title": "8  R package for phonetics",
+    "section": "8.2 phonTools",
+    "text": "8.2 phonTools\nThis package contains tools for the organization, display, and analysis of the sorts of data frequently encountered in phonetics research and experimentation, including the easy creation of IPA vowel plots, and the creation and manipulation of WAVE audio files.\nThis package is usefull, since it provides some datasets:\n\npb52 — Peterson & Barney (1952) Vowel Data (1520 rows)\nf73 — Fant (1973) Swedish Vowel Data (10 rows)\np73 — Pols et al. (1973) Dutch Vowel Data (12 rows)\nb95 — Bradlow (1995) Spanish Vowel Data (5 rows)\nh95 — Hillenbrand et al. (1995) Vowel Data (1668 rows)\na96 — Aronson et al. (1996) Hebrew Vowel Data (10 rows)\ny96 — Yang (1996) Korean Vowel Data (20 rows)\nf99 — Fourakis et al. (1999) Greek Vowel Data (5 rows)\nt07 — Thomson (2007) Vowel Data (20 rows)\n\nIn order to load them you need to follow these steps:\n\nlibrary(phonTools)\ndata(h95)\nh95\n\n\n  \n\n\n\nAs you see vowel column is in X-SAMPA. In order to use it we need to recode it:\n\nlibrary(tidyverse)\nh95 |&gt; \n  mutate(vowel = convert_phonetics(vowel, from = \"xsampa\", to = \"ipa\")) |&gt;\n  ggplot(aes(f2, f1, label = vowel, color = vowel))+\n  stat_ellipse()+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()+\n  coord_fixed()+\n  facet_wrap(~type)\n\n\n\n\n\n\n\n\nIt also make sense to use normalization for vowels:\n\nh95 |&gt; \n  mutate(vowel = convert_phonetics(vowel, from = \"xsampa\", to = \"ipa\")) |&gt;\n  group_by(speaker) |&gt; \n  mutate(f1 = scale(f1),\n         f2 = scale(f2)) |&gt; \n  ggplot(aes(f2, f1, label = vowel, color = vowel))+\n  stat_ellipse()+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()+\n  facet_wrap(~type)+\n  labs(title = \"Normalized vowels\")\n\n\n\n\n\n\n\n\nIf you will use the package it make sense to cite it:\n\ncitation(\"phonTools\")\n\nTo cite package 'phonTools' in publications use:\n\n  Barreda S (2023). \"phonTools: Functions for phonetics in R.\" R\n  package version 0.2-2.2.\n\nA BibTeX entry for LaTeX users is\n\n  @Misc{phonTools,\n    author = {Santiago Barreda},\n    title = {phonTools: Functions for phonetics in R},\n    note = {R package version 0.2-2.2},\n    year = {2023},\n  }",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>R package for phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "08-automatic-analysis.html#vowels",
+    "href": "08-automatic-analysis.html#vowels",
+    "title": "8  R package for phonetics",
+    "section": "8.3 vowels",
+    "text": "8.3 vowels\nProcedures for the manipulation, normalization, and plotting of phonetic and sociophonetic vowel formant data. vowels is the backend for the NORM website.\nIf you will use the package it make sense to cite it:\n\ncitation(\"vowels\")\n\nTo cite package 'vowels' in publications use:\n\n  Kendall T, Thomas ER (2018). _vowels: Vowel Manipulation,\n  Normalization, and Plotting_. R package version 1.2-2,\n  &lt;https://CRAN.R-project.org/package=vowels&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {vowels: Vowel Manipulation, Normalization, and Plotting},\n    author = {Tyler Kendall and Erik R. Thomas},\n    year = {2018},\n    note = {R package version 1.2-2},\n    url = {https://CRAN.R-project.org/package=vowels},\n  }\n\nATTENTION: This citation information has been auto-generated from the\npackage DESCRIPTION file and may need manual editing, see\n'help(\"citation\")'.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>R package for phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "08-automatic-analysis.html#rpraat",
+    "href": "08-automatic-analysis.html#rpraat",
+    "title": "8  R package for phonetics",
+    "section": "8.4 rPraat",
+    "text": "8.4 rPraat\nThis is a package for reading, writing and manipulating Praat objects like TextGrid, PitchTier, Pitch, IntensityTier, Formant, Sound, and Collection files. You can find the demo for rPraat here.\nIf you will use the package it make sense to cite it:\n\ncitation(\"rPraat\")\n\nTo cite rPraat in publications use:\n\n  Bořil, T., & Skarnitzl, R. (2016). Tools rPraat and mPraat. In P.\n  Sojka, A. Horák, I. Kopeček, & K. Pala (Eds.), Text, Speech, and\n  Dialogue (pp. 367-374). Springer International Publishing.\n\nA BibTeX entry for LaTeX users is\n\n  @InProceedings{,\n    author = {Tomáš Bořil and Radek Skarnitzl},\n    editor = {Petr Sojka and Aleš Horák and Ivan Kopeček and Karel Pala},\n    booktitle = {Text, Speech, and Dialogue: 19th International Conference, TSD 2016, Brno, Czech Republic, September 12-16, 2016, Proceedings},\n    publisher = {Springer International Publishing},\n    address = {Cham},\n    year = {2016},\n    title = {Tools rPraat and mPraat},\n    pages = {367--374},\n    isbn = {978-3-319-45510-5},\n    doi = {10.1007/978-3-319-45510-5_42},\n    url = {http://dx.doi.org/10.1007/978-3-319-45510-5_42},\n  }",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>R package for phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "08-automatic-analysis.html#speakr",
+    "href": "08-automatic-analysis.html#speakr",
+    "title": "8  R package for phonetics",
+    "section": "8.5 speakr",
+    "text": "8.5 speakr\nThis package allows running Praat scripts from R and it provides some wrappers for basic plotting.\nOn macOS, Linux and Windows, the path to Praat is set automatically to the default installation path. If you have installed Praat in a different location, or if your operating system is not supported, you can set the path to Praat with options(speakr.praat.path).\nFor example:\noptions(speakr.praat.path = \"./custom/praat.exe\")\nIf you use rstudio.cloud you need to upload the unziped file of Linux version of Praat and provide path to it within the options():\noptions(speakr.praat.path = \"/cloud/projects/praat\")\nYou can either run this command every time you start a new R session, or you can add the command to your .Rprofile.\nIf you run into the problem with permisions run the following command:\n\nsystem(\"chmod 700 /cloud/projects/praat\")\n\nAs an example I will use the following data:\n├── get-formants-args.praat\n├── s1_all.TextGrid\n└── s1_all.wav\nHere are the s1_all.TextGrid, s1_all.wav and the get-formants-args.praat:\nsound = Read from file: \"s1_all.wav\"\nformant = To Formant (burg): 0, 5, 5000, 0.05, 50\ntextgrid = Read from file: \"s1_all.TextGrid\"\nheader$ = \"vowel,F1,F2,F3\"\nwriteInfoLine: header$\n\nform Get formants\n    choice Measure 1\n        button Hertz\n        button Bark\n    real Window_(sec) 0.03\nendform\n\nif measure == 1\n    measure$ = \"Hertz\"\nelse\n    measure$ = \"Bark\"\nendif\n\nselectObject: textgrid\nintervals = Get number of intervals: 3\n\nfor interval to intervals - 1\n    label$ = Get label of interval: 3, interval\n    if label$ != \"\"\n        start = Get start time of interval: 3, interval\n        start = start + window\n        end = Get end time of interval: 3, interval\n        end = end - window\n        vowel$ = Get label of interval: 3, interval\n\n        selectObject: formant\n        f1 = Get mean: 1, start, end, measure$\n        f2 = Get mean: 2, start, end, measure$\n        f3 = Get mean: 3, start, end, measure$\n\n        resultLine$ = \"'vowel$','f1','f2','f3'\"\n        appendInfoLine: resultLine$\n        selectObject: textgrid\n    endif\nendfor\nIn order to use it you need to provide path to the script:\n\nlibrary(speakr)\npraat_run(\"sounds/speakr/get-formants-args.praat\", \n          \"Hertz\", 0.03, capture = TRUE)\n\n[1] \"vowel,F1,F2,F3\\na,832.4811706103461,1530.407550923205,2174.8142766925444\\na,775.5008460543343,1368.2559214263936,2509.0842739358327\\na,833.9754786129074,1430.990992307002,2375.2400438444165\\na,863.5056579489489,1546.885742911334,2890.4894666926434\\nə,723.6246285090019,1689.4018385005436,2873.199185801066\\nə,717.2752835271837,1675.2061788632182,2745.558475291998\\nə,758.8974774309055,1679.0831366099853,2698.9562863172\\nə,711.4372164545807,1685.113736085277,3031.596369149418\"\n\n\nAs you see the result is file in a .csv format. We can use the following code in order to visualise it:\n\nlibrary(tidyverse)\npraat_run(\"sounds/speakr/get-formants-args.praat\", \n          \"Hertz\", 0.03, capture = TRUE) |&gt; \n  read_csv() -&gt;\n  abaza_formants\n\nabaza_formants |&gt; \n  ggplot(aes(F2, F1, label = vowel, color = vowel))+\n  geom_text()+\n  scale_x_reverse()+\n  scale_y_reverse()+\n  coord_fixed()+\n  labs(title = \"Example of Abaza vowels\")\n\n\n\n\n\n\n\n\nIf you will use the package it make sense to cite it:\n\ncitation(\"speakr\")\n\nTo cite package 'speakr' in publications use:\n\n  Coretta S (2024). _speakr: A Wrapper for the Phonetic Software\n  'Praat'_. R package version 3.2.4,\n  &lt;https://CRAN.R-project.org/package=speakr&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {speakr: A Wrapper for the Phonetic Software 'Praat'},\n    author = {Stefano Coretta},\n    year = {2024},\n    note = {R package version 3.2.4},\n    url = {https://CRAN.R-project.org/package=speakr},\n  }",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>R package for phonetics</span>"
+    ]
+  },
+  {
+    "objectID": "08-automatic-analysis.html#wrassp",
+    "href": "08-automatic-analysis.html#wrassp",
+    "title": "8  R package for phonetics",
+    "section": "8.6 wrassp",
+    "text": "8.6 wrassp\nThe wrassp package is a wrapper for R around Michel Scheffers’ libassp (Advanced Speech Signal Processor). Here is the manual.\n\n\n\n\nFletcher, N. 2007. “Animal Bioacoustics.” In Springer Handbook of Acoustics, edited by Thomas D. Rossing, 785–804. New York: Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>R package for phonetics</span>"
+    ]
+  }
+]
