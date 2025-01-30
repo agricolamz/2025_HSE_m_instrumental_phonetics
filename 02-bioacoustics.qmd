@@ -23,8 +23,8 @@ Bioacoustics --- is a subbranch of biology focused on sound production, dispersi
 options(scipen = 999)
 df <- read_csv("data/Titze I., Riede T., Mau T. 2016.csv")
 set.seed(42)
-df %>% 
-  mutate(mid = max_f0_hz - 2*(max_f0_hz-min_f0_hz)/3) %>% 
+df |> 
+  mutate(mid = max_f0_hz - 2*(max_f0_hz-min_f0_hz)/3) |> 
   ggplot(aes(mass_kg, mid, label = species_en)) +
   geom_errorbar(aes(ymin = min_f0_hz, ymax = max_f0_hz))+
   ggrepel::geom_label_repel(show.legend = FALSE)+
@@ -34,7 +34,7 @@ df %>%
   theme_bw()+
   labs(color = "", x = "mass (kg), log-scale", y = "F0 frequency (Hz), log-scale",
        subtitle = "data from Titze, Riede, Mau 2016")
-ggsave("images/02.01_mass_freq.png")
+ggsave("images/02.01_mass_freq.png", bg = "white", width = 9, height = 7)
 ```
 
 ![](images/02.01_mass_freq.png)
@@ -91,6 +91,7 @@ BBC, Earth's tropical Island -- Borneo (20:47), see [here](https://www.youtube.c
 ## Land Vertebrates
 
 ![](images/02.02_mamal_bird.png)
+
 [Why can parrots talk?](https://www.youtube.com/watch?v=1EYUhpimyxc) - Grace Smith-Vidaurre and Tim Wright
 
 
