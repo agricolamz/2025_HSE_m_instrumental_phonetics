@@ -70,8 +70,8 @@ However, if we analyze real sounds it could be messy:
 ```{r}
 library(phonTools)
 data(pb52)
-pb52 %>% 
-  mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa")) %>%
+pb52 |> 
+  mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa")) |>
   ggplot(aes(f2, f1, label = vowel, color = vowel))+
   stat_ellipse()+
   geom_text()+
@@ -164,8 +164,8 @@ Human listeners deal seemingly effortlessly with all three possible sources of v
 ```{r, fig.width=12}
 library(phonTools)
 data(pb52)
-pb52 %>% 
-  mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa")) %>%
+pb52 |> 
+  mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa")) |>
   ggplot(aes(f2, f1, label = vowel, color = vowel))+
   stat_ellipse(show.legend = FALSE)+
   geom_text(show.legend = FALSE)+
@@ -209,7 +209,7 @@ The idea behind the Lobanov's method is simple z-normalization. Imagine some ran
 ```{r}
 set.seed(42)
 fake_data <- tibble(x = rnorm(151, mean = 57, sd = 2))
-fake_data %>% 
+fake_data |> 
   ggplot(aes(x))+
   geom_histogram(bins = 15)
 ```
@@ -220,8 +220,8 @@ $$x_{normalized} = \frac{x-\mu}{\sigma}$$
 
 
 ```{r}
-fake_data %>% 
-  mutate(x = scale(x)) %>% 
+fake_data |> 
+  mutate(x = scale(x)) |> 
   ggplot(aes(x))+
   geom_histogram(bins = 15)
 ```
@@ -229,11 +229,11 @@ fake_data %>%
 ```{r, echo=TRUE}
 library(phonTools)
 data(pb52)
-pb52 %>% 
-  group_by(speaker) %>% 
+pb52 |> 
+  group_by(speaker) |> 
   mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa"),
          scaled_f1 = scale(f1),
-         scaled_f2 = scale(f2)) %>%
+         scaled_f2 = scale(f2)) |>
   ggplot(aes(scaled_f2, scaled_f1, label = vowel, color = vowel))+
   stat_ellipse()+
   geom_text()+
@@ -248,17 +248,17 @@ Try to normalize and visualize data from the dataset Hillenbrand et al. (1995), 
 Sometimes it make sense to get back to the formant values:
 
 ```{r, echo=TRUE}
-pb52 %>% 
+pb52 |> 
   mutate(overall_mean_f1 = mean(f1),
          overall_sd_f1 = sd(f1),
          overall_mean_f2 = mean(f2),
-         overall_sd_f2 = sd(f2)) %>% 
-  group_by(speaker) %>% 
+         overall_sd_f2 = sd(f2)) |> 
+  group_by(speaker) |> 
   mutate(vowel = ipa::convert_phonetics(vowel, from = "xsampa", to = "ipa"),
-         sclaed_f1 = scale(f1),
-         sclaed_f2 = scale(f2),
-         restored_f1 = sclaed_f1*overall_sd_f1+overall_mean_f1,
-         restored_f2 = sclaed_f2*overall_sd_f2+overall_mean_f2) %>%
+         scaled_f1 = scale(f1),
+         scaled_f2 = scale(f2),
+         restored_f1 = scaled_f1*overall_sd_f1+overall_mean_f1,
+         restored_f2 = scaled_f2*overall_sd_f2+overall_mean_f2) |>
   ggplot(aes(restored_f2, restored_f1, label = vowel, color = vowel))+
   stat_ellipse()+
   geom_text()+
